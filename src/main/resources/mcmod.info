@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "hypixel_uhc_utilities",
+  "name": "Hypixel UHC Utilities",
+  "description": "一個可以讓你把 UHC 玩得更快、更順手的模組",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["LU__LU"],
+  "credits": "由魯大頭製作",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
