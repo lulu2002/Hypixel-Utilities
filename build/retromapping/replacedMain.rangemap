@@ -1,0 +1,1162 @@
+Symbol range map extraction starting
+Processing 31 files
+processing me/lulu/hypixelutilities/ChatListener.java
+@|me/lulu/hypixelutilities/ChatListener.java|8|32|me.lulu.hypixelutilities|package|me.lulu.hypixelutilities|(file)
+Class Start: me.lulu.hypixelutilities.ChatListener
+   Method Start: onChat(Lnet/minecraftforge/event/CommandEvent;)V
+      @|me/lulu/hypixelutilities/ChatListener.java|303|309|onChat|method|me.lulu.hypixelutilities.ChatListener|onChat|(Lnet/minecraftforge/event/CommandEvent;)V
+      @|me/lulu/hypixelutilities/ChatListener.java|310|322|CommandEvent|class|net.minecraftforge.event.CommandEvent
+      @|me/lulu/hypixelutilities/ChatListener.java|323|324|e|param|me.lulu.hypixelutilities.ChatListener|onChat|(Lnet/minecraftforge/event/CommandEvent;)V|e|0
+      @|me/lulu/hypixelutilities/ChatListener.java|336|342|McUtil|class|me.lulu.hypixelutilities.util.McUtil
+      @|me/lulu/hypixelutilities/ChatListener.java|343|352|getPlayer|method|me.lulu.hypixelutilities.util.McUtil|getPlayer|()Lnet/minecraft/client/entity/EntityPlayerSP;
+      @|me/lulu/hypixelutilities/ChatListener.java|355|369|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|me/lulu/hypixelutilities/ChatListener.java|374|391|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|me/lulu/hypixelutilities/ChatListener.java|392|393|e|param|me.lulu.hypixelutilities.ChatListener|onChat|(Lnet/minecraftforge/event/CommandEvent;)V|e|0
+      @|me/lulu/hypixelutilities/ChatListener.java|394|401|command|field|net.minecraftforge.event.CommandEvent|command
+      @|me/lulu/hypixelutilities/ChatListener.java|402|416|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/ChatListener.java|427|433|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/ChatListener.java|434|438|join|method|java.lang.String|join|(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/ChatListener.java|444|445|e|param|me.lulu.hypixelutilities.ChatListener|onChat|(Lnet/minecraftforge/event/CommandEvent;)V|e|0
+      @|me/lulu/hypixelutilities/ChatListener.java|446|456|parameters|field|net.minecraftforge.event.CommandEvent|parameters
+   Method End: onChat(Lnet/minecraftforge/event/CommandEvent;)V
+Class End  : me.lulu.hypixelutilities.ChatListener
+endProcessing me/lulu/hypixelutilities/ChatListener.java
+
+processing me/lulu/hypixelutilities/HypixelUtilities.java
+@|me/lulu/hypixelutilities/HypixelUtilities.java|8|32|me.lulu.hypixelutilities|package|me.lulu.hypixelutilities|(file)
+Class Start: me.lulu.hypixelutilities.HypixelUtilities
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|697|703|String|class|java.lang.String
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|704|709|MODID|field|me.lulu.hypixelutilities.HypixelUtilities|MODID|
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|757|763|String|class|java.lang.String
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|764|771|VERSION|field|me.lulu.hypixelutilities.HypixelUtilities|VERSION|
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|806|816|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|817|826|CRAFT_KEY|field|me.lulu.hypixelutilities.HypixelUtilities|CRAFT_KEY|
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|833|843|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|856|864|Keyboard|class|org.lwjgl.input.Keyboard
+   @|me/lulu/hypixelutilities/HypixelUtilities.java|865|870|KEY_C|field|org.lwjgl.input.Keyboard|KEY_C
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|928|932|init|method|me.lulu.hypixelutilities.HypixelUtilities|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|933|955|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|956|961|event|param|me.lulu.hypixelutilities.HypixelUtilities|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|973|987|registerEvents|method|me.lulu.hypixelutilities.HypixelUtilities|registerEvents|()V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|999|1015|registerCommands|method|me.lulu.hypixelutilities.HypixelUtilities|registerCommands|()V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1027|1043|registerKeyBinds|method|me.lulu.hypixelutilities.HypixelUtilities|registerKeyBinds|()V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: registerKeyBinds()V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1071|1087|registerKeyBinds|method|me.lulu.hypixelutilities.HypixelUtilities|registerKeyBinds|()V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1100|1114|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1115|1133|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1134|1143|CRAFT_KEY|field|me.lulu.hypixelutilities.HypixelUtilities|CRAFT_KEY
+   Method End: registerKeyBinds()V
+   Method Start: registerEvents()V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1170|1184|registerEvents|method|me.lulu.hypixelutilities.HypixelUtilities|registerEvents|()V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1197|1205|EventBus|class|net.minecraftforge.fml.common.eventhandler.EventBus
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1212|1226|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1227|1236|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1251|1259|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1264|1276|ChatListener|class|me.lulu.hypixelutilities.ChatListener
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1293|1301|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1306|1316|TestEvents|class|me.lulu.hypixelutilities.TestEvents
+   Method End: registerEvents()V
+   Method Start: registerCommands()V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1388|1404|registerCommands|method|me.lulu.hypixelutilities.HypixelUtilities|registerCommands|()V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1417|1431|CommandHandler|class|me.lulu.hypixelutilities.command.CommandHandler
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1446|1460|CommandHandler|class|me.lulu.hypixelutilities.command.CommandHandler
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1540|1555|registerCommand|method|me.lulu.hypixelutilities.command.CommandHandler|registerCommand|(Lme/lulu/hypixelutilities/command/Command;)V
+      @|me/lulu/hypixelutilities/HypixelUtilities.java|1560|1572|CraftCommand|class|me.lulu.hypixelutilities.command.impl.CraftCommand
+   Method End: registerCommands()V
+Class End  : me.lulu.hypixelutilities.HypixelUtilities
+endProcessing me/lulu/hypixelutilities/HypixelUtilities.java
+
+processing me/lulu/hypixelutilities/Registry.java
+@|me/lulu/hypixelutilities/Registry.java|8|32|me.lulu.hypixelutilities|package|me.lulu.hypixelutilities|(file)
+Class Start: me.lulu.hypixelutilities.Registry
+   @|me/lulu/hypixelutilities/Registry.java|163|175|GUI_KEY_BIND|field|me.lulu.hypixelutilities.Registry|GUI_KEY_BIND|
+   @|me/lulu/hypixelutilities/Registry.java|178|186|Keyboard|class|org.lwjgl.input.Keyboard
+   @|me/lulu/hypixelutilities/Registry.java|187|202|KEY_NUMPADENTER|field|org.lwjgl.input.Keyboard|KEY_NUMPADENTER
+Class End  : me.lulu.hypixelutilities.Registry
+endProcessing me/lulu/hypixelutilities/Registry.java
+
+processing me/lulu/hypixelutilities/TestEvents.java
+@|me/lulu/hypixelutilities/TestEvents.java|8|32|me.lulu.hypixelutilities|package|me.lulu.hypixelutilities|(file)
+Class Start: me.lulu.hypixelutilities.TestEvents
+   Method Start: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|me/lulu/hypixelutilities/TestEvents.java|321|331|onKeyInput|method|me.lulu.hypixelutilities.TestEvents|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|me/lulu/hypixelutilities/TestEvents.java|332|356|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent
+      @|me/lulu/hypixelutilities/TestEvents.java|357|358|e|param|me.lulu.hypixelutilities.TestEvents|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|e|0
+      @|me/lulu/hypixelutilities/TestEvents.java|374|390|HypixelUtilities|class|me.lulu.hypixelutilities.HypixelUtilities
+      @|me/lulu/hypixelutilities/TestEvents.java|391|400|CRAFT_KEY|field|me.lulu.hypixelutilities.HypixelUtilities|CRAFT_KEY
+      @|me/lulu/hypixelutilities/TestEvents.java|401|410|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|me/lulu/hypixelutilities/TestEvents.java|426|435|Minecraft|class|net.minecraft.client.Minecraft
+      @|me/lulu/hypixelutilities/TestEvents.java|436|448|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me/lulu/hypixelutilities/TestEvents.java|451|467|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|me/lulu/hypixelutilities/TestEvents.java|472|485|QuickCraftGui|class|me.lulu.hypixelutilities.craft.gui.QuickCraftGui
+   Method End: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+Class End  : me.lulu.hypixelutilities.TestEvents
+endProcessing me/lulu/hypixelutilities/TestEvents.java
+
+processing me/lulu/hypixelutilities/command/AbstractCommand.java
+@|me/lulu/hypixelutilities/command/AbstractCommand.java|8|40|me.lulu.hypixelutilities.command|package|me.lulu.hypixelutilities.command|(file)
+Class Start: me.lulu.hypixelutilities.command.AbstractCommand
+   @|me/lulu/hypixelutilities/command/AbstractCommand.java|234|240|String|class|java.lang.String
+   @|me/lulu/hypixelutilities/command/AbstractCommand.java|241|246|label|field|me.lulu.hypixelutilities.command.AbstractCommand|label|
+   @|me/lulu/hypixelutilities/command/AbstractCommand.java|260|266|String|class|java.lang.String
+   @|me/lulu/hypixelutilities/command/AbstractCommand.java|267|278|description|field|me.lulu.hypixelutilities.command.AbstractCommand|description|
+   Method Start: AbstractCommand(Ljava/lang/String;Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|292|307|AbstractCommand|method|me.lulu.hypixelutilities.command.AbstractCommand|AbstractCommand|(Ljava/lang/String;Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|308|314|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|315|320|label|param|me.lulu.hypixelutilities.command.AbstractCommand|AbstractCommand|(Ljava/lang/String;Ljava/lang/String;)V|label|0
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|322|328|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|329|340|description|param|me.lulu.hypixelutilities.command.AbstractCommand|AbstractCommand|(Ljava/lang/String;Ljava/lang/String;)V|description|1
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|357|362|label|field|me.lulu.hypixelutilities.command.AbstractCommand|label
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|365|370|label|param|me.lulu.hypixelutilities.command.AbstractCommand|AbstractCommand|(Ljava/lang/String;Ljava/lang/String;)V|label|0
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|385|396|description|field|me.lulu.hypixelutilities.command.AbstractCommand|description
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|399|410|description|param|me.lulu.hypixelutilities.command.AbstractCommand|AbstractCommand|(Ljava/lang/String;Ljava/lang/String;)V|description|1
+   Method End: AbstractCommand(Ljava/lang/String;Ljava/lang/String;)V
+   Method Start: onCommand(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|458|467|onCommand|method|me.lulu.hypixelutilities.command.Command|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|468|480|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|481|487|sender|param|me.lulu.hypixelutilities.command.AbstractCommand|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|sender|0
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|489|495|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|498|502|args|param|me.lulu.hypixelutilities.command.AbstractCommand|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|args|1
+   Method End: onCommand(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+   Method Start: getLabel()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|544|552|getLabel|method|me.lulu.hypixelutilities.command.Command|getLabel|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|537|543|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|572|577|label|field|me.lulu.hypixelutilities.command.AbstractCommand|label
+   Method End: getLabel()Ljava/lang/String;
+   Method Start: getDescription()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|624|638|getDescription|method|me.lulu.hypixelutilities.command.Command|getDescription|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|617|623|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|658|669|description|field|me.lulu.hypixelutilities.command.AbstractCommand|description
+   Method End: getDescription()Ljava/lang/String;
+   Method Start: onTabComplete(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|716|729|onTabComplete|method|me.lulu.hypixelutilities.command.Command|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|708|714|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|703|707|List|class|java.util.List
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|730|744|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|745|751|sender|param|me.lulu.hypixelutilities.command.AbstractCommand|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;|sender|0
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|753|759|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/AbstractCommand.java|762|766|args|param|me.lulu.hypixelutilities.command.AbstractCommand|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;|args|1
+   Method End: onTabComplete(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+Class End  : me.lulu.hypixelutilities.command.AbstractCommand
+endProcessing me/lulu/hypixelutilities/command/AbstractCommand.java
+
+processing me/lulu/hypixelutilities/command/Command.java
+@|me/lulu/hypixelutilities/command/Command.java|8|40|me.lulu.hypixelutilities.command|package|me.lulu.hypixelutilities.command|(file)
+Class Start: me.lulu.hypixelutilities.command.Command
+   Method Start: onCommand(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/Command.java|199|208|onCommand|method|me.lulu.hypixelutilities.command.Command|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/Command.java|209|221|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|me/lulu/hypixelutilities/command/Command.java|222|228|sender|param|me.lulu.hypixelutilities.command.Command|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|sender|0
+      @|me/lulu/hypixelutilities/command/Command.java|230|236|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/Command.java|239|243|args|param|me.lulu.hypixelutilities.command.Command|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|args|1
+   Method End: onCommand(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+   Method Start: getLabel()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/Command.java|258|266|getLabel|method|me.lulu.hypixelutilities.command.Command|getLabel|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/Command.java|251|257|String|class|java.lang.String
+   Method End: getLabel()Ljava/lang/String;
+   Method Start: getDescription()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/Command.java|282|296|getDescription|method|me.lulu.hypixelutilities.command.Command|getDescription|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/Command.java|275|281|String|class|java.lang.String
+   Method End: getDescription()Ljava/lang/String;
+   Method Start: onTabComplete(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/Command.java|318|331|onTabComplete|method|me.lulu.hypixelutilities.command.Command|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/Command.java|310|316|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/Command.java|305|309|List|class|java.util.List
+      @|me/lulu/hypixelutilities/command/Command.java|332|346|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me/lulu/hypixelutilities/command/Command.java|347|353|sender|param|me.lulu.hypixelutilities.command.Command|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;|sender|0
+      @|me/lulu/hypixelutilities/command/Command.java|355|361|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/Command.java|364|368|args|param|me.lulu.hypixelutilities.command.Command|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;|args|1
+   Method End: onTabComplete(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+Class End  : me.lulu.hypixelutilities.command.Command
+endProcessing me/lulu/hypixelutilities/command/Command.java
+
+processing me/lulu/hypixelutilities/command/CommandAdapter.java
+@|me/lulu/hypixelutilities/command/CommandAdapter.java|8|40|me.lulu.hypixelutilities.command|package|me.lulu.hypixelutilities.command|(file)
+Class Start: me.lulu.hypixelutilities.command.CommandAdapter
+   @|me/lulu/hypixelutilities/command/CommandAdapter.java|350|357|Command|class|me.lulu.hypixelutilities.command.Command
+   @|me/lulu/hypixelutilities/command/CommandAdapter.java|358|365|command|field|me.lulu.hypixelutilities.command.CommandAdapter|command|
+   Method Start: CommandAdapter(Lme/lulu/hypixelutilities/command/Command;)V
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|379|393|CommandAdapter|method|me.lulu.hypixelutilities.command.CommandAdapter|CommandAdapter|(Lme/lulu/hypixelutilities/command/Command;)V
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|394|401|Command|class|me.lulu.hypixelutilities.command.Command
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|402|409|command|param|me.lulu.hypixelutilities.command.CommandAdapter|CommandAdapter|(Lme/lulu/hypixelutilities/command/Command;)V|command|0
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|426|433|command|field|me.lulu.hypixelutilities.command.CommandAdapter|command
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|436|443|command|param|me.lulu.hypixelutilities.command.CommandAdapter|CommandAdapter|(Lme/lulu/hypixelutilities/command/Command;)V|command|0
+   Method End: CommandAdapter(Lme/lulu/hypixelutilities/command/Command;)V
+   Method Start: getCommandName()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|484|498|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|477|483|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|518|525|command|field|me.lulu.hypixelutilities.command.CommandAdapter|command
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|526|534|getLabel|method|me.lulu.hypixelutilities.command.Command|getLabel|()Ljava/lang/String;
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|578|593|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|571|577|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|594|608|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|609|623|iCommandSender|param|me.lulu.hypixelutilities.command.CommandAdapter|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|iCommandSender|0
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|642|649|command|field|me.lulu.hypixelutilities.command.CommandAdapter|command
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|650|664|getDescription|method|me.lulu.hypixelutilities.command.Command|getDescription|()Ljava/lang/String;
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|705|719|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|776|792|CommandException|class|net.minecraft.command.CommandException
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|720|734|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|735|749|iCommandSender|param|me.lulu.hypixelutilities.command.CommandAdapter|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|iCommandSender|0
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|751|757|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|760|767|strings|param|me.lulu.hypixelutilities.command.CommandAdapter|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|strings|1
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|807|821|iCommandSender|param|me.lulu.hypixelutilities.command.CommandAdapter|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|iCommandSender|0
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|833|845|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|859|866|command|field|me.lulu.hypixelutilities.command.CommandAdapter|command
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|867|876|onCommand|method|me.lulu.hypixelutilities.command.Command|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|879|891|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|894|908|iCommandSender|param|me.lulu.hypixelutilities.command.CommandAdapter|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|iCommandSender|0
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|910|917|strings|param|me.lulu.hypixelutilities.command.CommandAdapter|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|strings|1
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|965|988|addTabCompletionOptions|method|net.minecraft.command.ICommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|957|963|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|952|956|List|class|java.util.List
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|989|1003|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1004|1010|sender|param|me.lulu.hypixelutilities.command.CommandAdapter|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|sender|0
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1012|1018|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1021|1025|args|param|me.lulu.hypixelutilities.command.CommandAdapter|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1027|1035|BlockPos|class|net.minecraft.util.BlockPos
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1036|1044|blockPos|param|me.lulu.hypixelutilities.command.CommandAdapter|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|blockPos|2
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1063|1070|command|field|me.lulu.hypixelutilities.command.CommandAdapter|command
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1071|1084|onTabComplete|method|me.lulu.hypixelutilities.command.Command|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1085|1091|sender|param|me.lulu.hypixelutilities.command.CommandAdapter|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|sender|0
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1093|1097|args|param|me.lulu.hypixelutilities.command.CommandAdapter|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+   Method End: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+   Method Start: getRequiredPermissionLevel()I
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1136|1162|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1226|1252|canCommandSenderUseCommand|method|net.minecraft.command.ICommand|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1253|1267|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me/lulu/hypixelutilities/command/CommandAdapter.java|1268|1299|p_canCommandSenderUseCommand_1_|param|me.lulu.hypixelutilities.command.CommandAdapter|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z|p_canCommandSenderUseCommand_1_|0
+   Method End: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+Class End  : me.lulu.hypixelutilities.command.CommandAdapter
+endProcessing me/lulu/hypixelutilities/command/CommandAdapter.java
+
+processing me/lulu/hypixelutilities/command/CommandHandler.java
+@|me/lulu/hypixelutilities/command/CommandHandler.java|8|40|me.lulu.hypixelutilities.command|package|me.lulu.hypixelutilities.command|(file)
+Class Start: me.lulu.hypixelutilities.command.CommandHandler
+   Method Start: CommandHandler()V
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|141|155|CommandHandler|method|me.lulu.hypixelutilities.command.CommandHandler|CommandHandler|()V
+   Method End: CommandHandler()V
+   Method Start: registerCommand(Lme/lulu/hypixelutilities/command/Command;)V
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|184|199|registerCommand|method|me.lulu.hypixelutilities.command.CommandHandler|registerCommand|(Lme/lulu/hypixelutilities/command/Command;)V
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|200|207|Command|class|me.lulu.hypixelutilities.command.Command
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|208|215|command|param|me.lulu.hypixelutilities.command.CommandHandler|registerCommand|(Lme/lulu/hypixelutilities/command/Command;)V|command|0
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|227|247|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|258|278|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|279|287|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|305|320|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|325|339|CommandAdapter|class|me.lulu.hypixelutilities.command.CommandAdapter
+      @|me/lulu/hypixelutilities/command/CommandHandler.java|340|347|command|param|me.lulu.hypixelutilities.command.CommandHandler|registerCommand|(Lme/lulu/hypixelutilities/command/Command;)V|command|0
+   Method End: registerCommand(Lme/lulu/hypixelutilities/command/Command;)V
+Class End  : me.lulu.hypixelutilities.command.CommandHandler
+endProcessing me/lulu/hypixelutilities/command/CommandHandler.java
+
+processing me/lulu/hypixelutilities/command/impl/CraftCommand.java
+@|me/lulu/hypixelutilities/command/impl/CraftCommand.java|8|45|me.lulu.hypixelutilities.command.impl|package|me.lulu.hypixelutilities.command.impl|(file)
+Class Start: me.lulu.hypixelutilities.command.impl.CraftCommand
+   Method Start: CraftCommand()V
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|647|659|CraftCommand|method|me.lulu.hypixelutilities.command.impl.CraftCommand|CraftCommand|()V
+   Method End: CraftCommand()V
+   Method Start: onCommand(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|739|748|onCommand|method|me.lulu.hypixelutilities.command.Command|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|749|761|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|762|768|sender|param|me.lulu.hypixelutilities.command.impl.CraftCommand|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|sender|0
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|770|776|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|779|783|args|param|me.lulu.hypixelutilities.command.impl.CraftCommand|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|args|1
+   Method End: onCommand(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+   Method Start: onTabComplete(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1319|1332|onTabComplete|method|me.lulu.hypixelutilities.command.Command|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1311|1317|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1306|1310|List|class|java.util.List
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1333|1347|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1348|1354|sender|param|me.lulu.hypixelutilities.command.impl.CraftCommand|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;|sender|0
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1356|1362|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1365|1369|args|param|me.lulu.hypixelutilities.command.impl.CraftCommand|onTabComplete|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;|args|1
+   Method End: onTabComplete(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Ljava/util/List;
+   Method Start: getCompleteOptions()Ljava/util/Collection;
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1682|1700|getCompleteOptions|method|me.lulu.hypixelutilities.command.impl.CraftCommand|getCompleteOptions|()Ljava/util/Collection;
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1674|1680|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/impl/CraftCommand.java|1663|1673|Collection|class|java.util.Collection
+   Method End: getCompleteOptions()Ljava/util/Collection;
+Class End  : me.lulu.hypixelutilities.command.impl.CraftCommand
+endProcessing me/lulu/hypixelutilities/command/impl/CraftCommand.java
+
+processing me/lulu/hypixelutilities/command/impl/ResourcesCommand.java
+@|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|8|45|me.lulu.hypixelutilities.command.impl|package|me.lulu.hypixelutilities.command.impl|(file)
+Class Start: me.lulu.hypixelutilities.command.impl.ResourcesCommand
+   Method Start: ResourcesCommand()V
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|461|477|ResourcesCommand|method|me.lulu.hypixelutilities.command.impl.ResourcesCommand|ResourcesCommand|()V
+   Method End: ResourcesCommand()V
+   Method Start: onCommand(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|557|566|onCommand|method|me.lulu.hypixelutilities.command.Command|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|567|579|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|580|586|sender|param|me.lulu.hypixelutilities.command.impl.ResourcesCommand|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|sender|0
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|588|594|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|597|601|args|param|me.lulu.hypixelutilities.command.impl.ResourcesCommand|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|args|1
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|617|621|args|param|me.lulu.hypixelutilities.command.impl.ResourcesCommand|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|663|669|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|677|681|args|param|me.lulu.hypixelutilities.command.impl.ResourcesCommand|onCommand|(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V|args|1
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|685|696|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|708|711|Hud|class|me.lulu.hypixelutilities.hud.Hud
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|726|736|HudManager|class|me.lulu.hypixelutilities.hud.HudManager
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|737|746|clearHuds|method|me.lulu.hypixelutilities.hud.HudManager|clearHuds|()V
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|856|870|DragonSwordHud|class|me.lulu.hypixelutilities.items.DragonSwordHud
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|974|984|AndruilHud|class|me.lulu.hypixelutilities.items.AndruilHud
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|1048|1054|McUtil|class|me.lulu.hypixelutilities.util.McUtil
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|1055|1064|getPlayer|method|me.lulu.hypixelutilities.util.McUtil|getPlayer|()Lnet/minecraft/client/entity/EntityPlayerSP;
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|1067|1082|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|1135|1145|HudManager|class|me.lulu.hypixelutilities.hud.HudManager
+      @|me/lulu/hypixelutilities/command/impl/ResourcesCommand.java|1146|1152|addHud|method|me.lulu.hypixelutilities.hud.HudManager|addHud|(Lme/lulu/hypixelutilities/hud/Hud;)V
+   Method End: onCommand(Lnet/minecraft/entity/player/EntityPlayer;[Ljava/lang/String;)V
+Class End  : me.lulu.hypixelutilities.command.impl.ResourcesCommand
+endProcessing me/lulu/hypixelutilities/command/impl/ResourcesCommand.java
+
+processing me/lulu/hypixelutilities/craft/ButtonDrawer.java
+@|me/lulu/hypixelutilities/craft/ButtonDrawer.java|8|38|me.lulu.hypixelutilities.craft|package|me.lulu.hypixelutilities.craft|(file)
+Class Start: me.lulu.hypixelutilities.craft.ButtonDrawer
+   Method Start: draw(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawer.java|127|131|draw|method|me.lulu.hypixelutilities.craft.ButtonDrawer|draw|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawer.java|132|141|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|me/lulu/hypixelutilities/craft/ButtonDrawer.java|142|148|button|param|me.lulu.hypixelutilities.craft.ButtonDrawer|draw|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+   Method End: draw(Lnet/minecraft/client/gui/GuiButton;)V
+Class End  : me.lulu.hypixelutilities.craft.ButtonDrawer
+endProcessing me/lulu/hypixelutilities/craft/ButtonDrawer.java
+
+processing me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java
+@|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|8|38|me.lulu.hypixelutilities.craft|package|me.lulu.hypixelutilities.craft|(file)
+Class Start: me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|210|221|buttonWidth|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonWidth|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|223|235|buttonHeight|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonHeight|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|259|267|guiWidth|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|guiWidth|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|269|278|guiHeight|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|guiHeight|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|302|315|buttonsPerRow|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonsPerRow|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|340|351|screenWidth|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|screenWidth|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|354|363|Minecraft|class|net.minecraft.client.Minecraft
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|364|376|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|379|391|displayWidth|field|net.minecraft.client.Minecraft|displayWidth
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|415|426|buttonSpace|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonSpace|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|450|459|xToCenter|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|xToCenter|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|483|490|yMargin|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|yMargin|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|514|528|drawingRowSlot|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|drawingRowSlot|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|546|554|currentY|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|currentY|
+   @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|557|564|yMargin|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|yMargin
+   Method Start: ButtonDrawerCenterAlign(IIIII)V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|579|602|ButtonDrawerCenterAlign|method|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|607|618|buttonWidth|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|buttonWidth|0
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|624|636|buttonHeight|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|buttonHeight|1
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|642|655|buttonsPerRow|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|buttonsPerRow|2
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|661|669|guiWidth|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|guiWidth|3
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|675|684|guiHeight|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|guiHeight|4
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|701|712|buttonWidth|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonWidth
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|715|726|buttonWidth|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|buttonWidth|0
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|741|753|buttonHeight|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonHeight
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|756|768|buttonHeight|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|buttonHeight|1
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|783|796|buttonsPerRow|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonsPerRow
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|799|812|buttonsPerRow|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|buttonsPerRow|2
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|827|835|guiWidth|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|guiWidth
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|838|846|guiWidth|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|guiWidth|3
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|861|870|guiHeight|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|guiHeight
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|873|882|guiHeight|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|guiHeight|4
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|898|909|buttonSpace|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonSpace
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|912|920|guiWidth|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|guiWidth|3
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|923|936|buttonsPerRow|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|buttonsPerRow|2
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|951|960|xToCenter|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|xToCenter
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|964|975|buttonSpace|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonSpace
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|978|989|buttonWidth|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|ButtonDrawerCenterAlign|(IIIII)V|buttonWidth|0
+   Method End: ButtonDrawerCenterAlign(IIIII)V
+   Method Start: draw(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1033|1037|draw|method|me.lulu.hypixelutilities.craft.ButtonDrawer|draw|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1038|1047|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1048|1054|button|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|draw|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1070|1084|drawingRowSlot|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|drawingRowSlot
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1088|1101|buttonsPerRow|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonsPerRow
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1115|1123|nextLine|method|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|nextLine|()V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1136|1142|button|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|draw|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1143|1149|height|field|net.minecraft.client.gui.GuiButton|height
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1157|1169|buttonHeight|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonHeight
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1179|1185|button|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|draw|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1186|1191|width|field|net.minecraft.client.gui.GuiButton|width
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1199|1210|buttonWidth|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonWidth
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1220|1226|button|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|draw|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1227|1236|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1245|1259|drawingRowSlot|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|drawingRowSlot
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1267|1278|buttonSpace|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonSpace
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1281|1290|xToCenter|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|xToCenter
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1301|1307|button|param|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|draw|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1308|1317|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1320|1328|currentY|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|currentY
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1339|1353|drawingRowSlot|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|drawingRowSlot
+   Method End: draw(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: nextLine()V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1381|1389|nextLine|method|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|nextLine|()V
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1402|1416|drawingRowSlot|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|drawingRowSlot
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1430|1438|currentY|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|currentY
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1443|1450|yMargin|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|yMargin
+      @|me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java|1453|1465|buttonHeight|field|me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign|buttonHeight
+   Method End: nextLine()V
+Class End  : me.lulu.hypixelutilities.craft.ButtonDrawerCenterAlign
+endProcessing me/lulu/hypixelutilities/craft/ButtonDrawerCenterAlign.java
+
+processing me/lulu/hypixelutilities/craft/ListButtons.java
+@|me/lulu/hypixelutilities/craft/ListButtons.java|8|38|me.lulu.hypixelutilities.craft|package|me.lulu.hypixelutilities.craft|(file)
+Class Start: me.lulu.hypixelutilities.craft.ListButtons
+   @|me/lulu/hypixelutilities/craft/ListButtons.java|230|241|buttonWidth|field|me.lulu.hypixelutilities.craft.ListButtons|buttonWidth|
+   @|me/lulu/hypixelutilities/craft/ListButtons.java|243|255|buttonHeight|field|me.lulu.hypixelutilities.craft.ListButtons|buttonHeight|
+   @|me/lulu/hypixelutilities/craft/ListButtons.java|273|281|guiWidth|field|me.lulu.hypixelutilities.craft.ListButtons|guiWidth|
+   @|me/lulu/hypixelutilities/craft/ListButtons.java|283|292|guiHeight|field|me.lulu.hypixelutilities.craft.ListButtons|guiHeight|
+   @|me/lulu/hypixelutilities/craft/ListButtons.java|310|323|buttonsPerRow|field|me.lulu.hypixelutilities.craft.ListButtons|buttonsPerRow|
+   Method Start: ListButtons(IIIII)V
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|338|349|ListButtons|method|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|354|365|buttonWidth|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|buttonWidth|0
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|371|383|buttonHeight|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|buttonHeight|1
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|389|397|guiWidth|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|guiWidth|2
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|403|412|guiHeight|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|guiHeight|3
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|418|431|buttonsPerRow|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|buttonsPerRow|4
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|448|459|buttonWidth|field|me.lulu.hypixelutilities.craft.ListButtons|buttonWidth
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|462|473|buttonWidth|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|buttonWidth|0
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|488|500|buttonHeight|field|me.lulu.hypixelutilities.craft.ListButtons|buttonHeight
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|503|515|buttonHeight|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|buttonHeight|1
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|530|538|guiWidth|field|me.lulu.hypixelutilities.craft.ListButtons|guiWidth
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|541|549|guiWidth|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|guiWidth|2
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|564|573|guiHeight|field|me.lulu.hypixelutilities.craft.ListButtons|guiHeight
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|576|585|guiHeight|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|guiHeight|3
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|600|613|buttonsPerRow|field|me.lulu.hypixelutilities.craft.ListButtons|buttonsPerRow
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|616|629|buttonsPerRow|param|me.lulu.hypixelutilities.craft.ListButtons|ListButtons|(IIIII)V|buttonsPerRow|4
+   Method End: ListButtons(IIIII)V
+   Method Start: generateButtons(Ljava/util/Collection;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|665|680|generateButtons|method|me.lulu.hypixelutilities.craft.ListButtons|generateButtons|(Ljava/util/Collection;)Ljava/util/List;
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|654|663|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|649|653|List|class|java.util.List
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|681|691|Collection|class|java.util.Collection
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|695|700|eList|param|me.lulu.hypixelutilities.craft.ListButtons|generateButtons|(Ljava/util/Collection;)Ljava/util/List;|eList|0
+   Method End: generateButtons(Ljava/util/Collection;)Ljava/util/List;
+   Method Start: toButton(Ljava/lang/Object;)Lnet/minecraft/client/gui/GuiButton;
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|1119|1127|toButton|method|me.lulu.hypixelutilities.craft.ListButtons|toButton|(Ljava/lang/Object;)Lnet/minecraft/client/gui/GuiButton;
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|1109|1118|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|me/lulu/hypixelutilities/craft/ListButtons.java|1130|1131|e|param|me.lulu.hypixelutilities.craft.ListButtons|toButton|(Ljava/lang/Object;)Lnet/minecraft/client/gui/GuiButton;|e|0
+   Method End: toButton(Ljava/lang/Object;)Lnet/minecraft/client/gui/GuiButton;
+Class End  : me.lulu.hypixelutilities.craft.ListButtons
+endProcessing me/lulu/hypixelutilities/craft/ListButtons.java
+
+processing me/lulu/hypixelutilities/craft/QuickCraft.java
+@|me/lulu/hypixelutilities/craft/QuickCraft.java|8|38|me.lulu.hypixelutilities.craft|package|me.lulu.hypixelutilities.craft|(file)
+Enum Start: me.lulu.hypixelutilities.craft.QuickCraft
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|76|86|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|93|110|APPRENTICE_HELMET|field|me.lulu.hypixelutilities.craft.QuickCraft|APPRENTICE_HELMET
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|116|132|APPRENTICE_SWORD|field|me.lulu.hypixelutilities.craft.QuickCraft|APPRENTICE_SWORD
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|138|152|APPRENTICE_BOW|field|me.lulu.hypixelutilities.craft.QuickCraft|APPRENTICE_BOW
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|158|173|MASTERS_COMPASS|field|me.lulu.hypixelutilities.craft.QuickCraft|MASTERS_COMPASS
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|179|191|VORPAL_SWORD|field|me.lulu.hypixelutilities.craft.QuickCraft|VORPAL_SWORD
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|197|215|BOOK_OF_SHARPENING|field|me.lulu.hypixelutilities.craft.QuickCraft|BOOK_OF_SHARPENING
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|239|252|BOOK_OF_POWER|field|me.lulu.hypixelutilities.craft.QuickCraft|BOOK_OF_POWER
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|276|288|DRAGON_SWORD|field|me.lulu.hypixelutilities.craft.QuickCraft|DRAGON_SWORD
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|294|309|LEATHER_ECONOMY|field|me.lulu.hypixelutilities.craft.QuickCraft|LEATHER_ECONOMY
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|332|350|BOOK_OF_PROTECTION|field|me.lulu.hypixelutilities.craft.QuickCraft|BOOK_OF_PROTECTION
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|369|381|ARTEMIS_BOOK|field|me.lulu.hypixelutilities.craft.QuickCraft|ARTEMIS_BOOK
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|405|417|DRAGON_ARMOR|field|me.lulu.hypixelutilities.craft.QuickCraft|DRAGON_ARMOR
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|423|436|DUST_OF_LIGHT|field|me.lulu.hypixelutilities.craft.QuickCraft|DUST_OF_LIGHT
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|461|477|BREWING_ARTIFACT|field|me.lulu.hypixelutilities.craft.QuickCraft|BREWING_ARTIFACT
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|498|504|NECTAR|field|me.lulu.hypixelutilities.craft.QuickCraft|NECTAR
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|526|542|FLAMING_ARTIFACT|field|me.lulu.hypixelutilities.craft.QuickCraft|FLAMING_ARTIFACT
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|561|575|DELICIOUS_MEAL|field|me.lulu.hypixelutilities.craft.QuickCraft|DELICIOUS_MEAL
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|597|616|POTION_OF_TOUGHNESS|field|me.lulu.hypixelutilities.craft.QuickCraft|POTION_OF_TOUGHNESS
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|626|638|SPIKED_ARMOR|field|me.lulu.hypixelutilities.craft.QuickCraft|SPIKED_ARMOR
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|648|666|SEVEN_LEAGUE_BOOTS|field|me.lulu.hypixelutilities.craft.QuickCraft|SEVEN_LEAGUE_BOOTS
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|672|681|IRON_PACK|field|me.lulu.hypixelutilities.craft.QuickCraft|IRON_PACK
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|702|710|OBSIDIAN|field|me.lulu.hypixelutilities.craft.QuickCraft|OBSIDIAN
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|716|724|TARNHELM|field|me.lulu.hypixelutilities.craft.QuickCraft|TARNHELM
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|730|750|PHILOSOPHERS_PICKAXE|field|me.lulu.hypixelutilities.craft.QuickCraft|PHILOSOPHERS_PICKAXE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|776|793|ENLIGHTENING_PACK|field|me.lulu.hypixelutilities.craft.QuickCraft|ENLIGHTENING_PACK
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|803|814|LIGHT_ANVIL|field|me.lulu.hypixelutilities.craft.QuickCraft|LIGHT_ANVIL
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|820|843|LIGHT_ENCHANTMENT_TABLE|field|me.lulu.hypixelutilities.craft.QuickCraft|LIGHT_ENCHANTMENT_TABLE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|853|866|BOOK_OF_THOTH|field|me.lulu.hypixelutilities.craft.QuickCraft|BOOK_OF_THOTH
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|872|887|EVES_TEMPTATION|field|me.lulu.hypixelutilities.craft.QuickCraft|EVES_TEMPTATION
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|903|916|HEALING_FRUIT|field|me.lulu.hypixelutilities.craft.QuickCraft|HEALING_FRUIT
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|931|941|HOLY_WATER|field|me.lulu.hypixelutilities.craft.QuickCraft|HOLY_WATER
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|965|976|LIGHT_APPLE|field|me.lulu.hypixelutilities.craft.QuickCraft|LIGHT_APPLE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|982|993|GOLDEN_HEAD|field|me.lulu.hypixelutilities.craft.QuickCraft|GOLDEN_HEAD
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|999|1011|PANDORAS_BOX|field|me.lulu.hypixelutilities.craft.QuickCraft|PANDORAS_BOX
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1017|1024|PANACEA|field|me.lulu.hypixelutilities.craft.QuickCraft|PANACEA
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1030|1040|CUPIDS_BOW|field|me.lulu.hypixelutilities.craft.QuickCraft|CUPIDS_BOW
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1046|1059|ARROW_ECONOMY|field|me.lulu.hypixelutilities.craft.QuickCraft|ARROW_ECONOMY
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1083|1089|SADDLE|field|me.lulu.hypixelutilities.craft.QuickCraft|SADDLE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1095|1113|POTION_OF_VELOCITY|field|me.lulu.hypixelutilities.craft.QuickCraft|POTION_OF_VELOCITY
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1119|1125|FENRIR|field|me.lulu.hypixelutilities.craft.QuickCraft|FENRIR
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1131|1136|FORGE|field|me.lulu.hypixelutilities.craft.QuickCraft|FORGE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1142|1152|QUICK_PICK|field|me.lulu.hypixelutilities.craft.QuickCraft|QUICK_PICK
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1180|1195|LUMBERJACKS_AXE|field|me.lulu.hypixelutilities.craft.QuickCraft|LUMBERJACKS_AXE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1219|1235|ENHANCEMENT_BOOK|field|me.lulu.hypixelutilities.craft.QuickCraft|ENHANCEMENT_BOOK
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1241|1250|GOLD_PACK|field|me.lulu.hypixelutilities.craft.QuickCraft|GOLD_PACK
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1256|1266|SUGAR_RUSH|field|me.lulu.hypixelutilities.craft.QuickCraft|SUGAR_RUSH
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1286|1294|BACKPACK|field|me.lulu.hypixelutilities.craft.QuickCraft|BACKPACK
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1300|1312|FUSION_ARMOR|field|me.lulu.hypixelutilities.craft.QuickCraft|FUSION_ARMOR
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1318|1330|LUCKY_SHEARS|field|me.lulu.hypixelutilities.craft.QuickCraft|LUCKY_SHEARS
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1336|1344|THE_DEEP|field|me.lulu.hypixelutilities.craft.QuickCraft|THE_DEEP
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1350|1359|SWAN_SONG|field|me.lulu.hypixelutilities.craft.QuickCraft|SWAN_SONG
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1365|1386|TREASURE_OF_EL_DORADO|field|me.lulu.hypixelutilities.craft.QuickCraft|TREASURE_OF_EL_DORADO
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1405|1416|ARTEMIS_BOW|field|me.lulu.hypixelutilities.craft.QuickCraft|ARTEMIS_BOW
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1422|1436|FLASK_OF_ICHOR|field|me.lulu.hypixelutilities.craft.QuickCraft|FLASK_OF_ICHOR
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1442|1448|EXODUS|field|me.lulu.hypixelutilities.craft.QuickCraft|EXODUS
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1454|1471|HIDE_OF_LEVIATHAN|field|me.lulu.hypixelutilities.craft.QuickCraft|HIDE_OF_LEVIATHAN
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1477|1495|TABLETS_OF_DESTINY|field|me.lulu.hypixelutilities.craft.QuickCraft|TABLETS_OF_DESTINY
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1501|1513|AXE_OF_PERUN|field|me.lulu.hypixelutilities.craft.QuickCraft|AXE_OF_PERUN
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1519|1528|EXCALIBUR|field|me.lulu.hypixelutilities.craft.QuickCraft|EXCALIBUR
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1534|1541|ANDURIL|field|me.lulu.hypixelutilities.craft.QuickCraft|ANDURIL
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1547|1560|DEATHS_SCYTHE|field|me.lulu.hypixelutilities.craft.QuickCraft|DEATHS_SCYTHE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1566|1579|CHEST_OF_FATE|field|me.lulu.hypixelutilities.craft.QuickCraft|CHEST_OF_FATE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1585|1595|CORNUCOPIA|field|me.lulu.hypixelutilities.craft.QuickCraft|CORNUCOPIA
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1601|1621|ESSENCE_OF_YGGDRASIL|field|me.lulu.hypixelutilities.craft.QuickCraft|ESSENCE_OF_YGGDRASIL
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1627|1634|VOIDBOX|field|me.lulu.hypixelutilities.craft.QuickCraft|VOIDBOX
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1640|1655|DEUS_EX_MACHINA|field|me.lulu.hypixelutilities.craft.QuickCraft|DEUS_EX_MACHINA
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1661|1672|DICE_OF_GOD|field|me.lulu.hypixelutilities.craft.QuickCraft|DICE_OF_GOD
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1678|1687|KINGS_ROD|field|me.lulu.hypixelutilities.craft.QuickCraft|KINGS_ROD
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1693|1702|DAREDEVIL|field|me.lulu.hypixelutilities.craft.QuickCraft|DAREDEVIL
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1708|1726|FLASK_OF_CLEANSING|field|me.lulu.hypixelutilities.craft.QuickCraft|FLASK_OF_CLEANSING
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1732|1746|SHOES_OF_VIDAR|field|me.lulu.hypixelutilities.craft.QuickCraft|SHOES_OF_VIDAR
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1752|1770|POTION_OF_VITALITY|field|me.lulu.hypixelutilities.craft.QuickCraft|POTION_OF_VITALITY
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1776|1791|MINERS_BLESSING|field|me.lulu.hypixelutilities.craft.QuickCraft|MINERS_BLESSING
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1797|1805|AMBROSIA|field|me.lulu.hypixelutilities.craft.QuickCraft|AMBROSIA
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1811|1820|BLOODLUST|field|me.lulu.hypixelutilities.craft.QuickCraft|BLOODLUST
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1826|1837|MODULAR_BOW|field|me.lulu.hypixelutilities.craft.QuickCraft|MODULAR_BOW
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1843|1854|EXPERT_SEAL|field|me.lulu.hypixelutilities.craft.QuickCraft|EXPERT_SEAL
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1860|1872|HERMES_BOOTS|field|me.lulu.hypixelutilities.craft.QuickCraft|HERMES_BOOTS
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1878|1898|BARBARIAN_CHESTPLATE|field|me.lulu.hypixelutilities.craft.QuickCraft|BARBARIAN_CHESTPLATE
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1904|1914|FATES_CALL|field|me.lulu.hypixelutilities.craft.QuickCraft|FATES_CALL
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1924|1932|THE_MARK|field|me.lulu.hypixelutilities.craft.QuickCraft|THE_MARK
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1938|1951|WARLOCK_PANTS|field|me.lulu.hypixelutilities.craft.QuickCraft|WARLOCK_PANTS
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1978|1984|String|class|java.lang.String
+   @|me/lulu/hypixelutilities/craft/QuickCraft.java|1985|1998|nameInHypixel|field|me.lulu.hypixelutilities.craft.QuickCraft|nameInHypixel|
+   Method Start: QuickCraft()V
+      @|me/lulu/hypixelutilities/craft/QuickCraft.java|2005|2015|QuickCraft|method|me.lulu.hypixelutilities.craft.QuickCraft|QuickCraft|()V
+      @|me/lulu/hypixelutilities/craft/QuickCraft.java|2033|2046|nameInHypixel|field|me.lulu.hypixelutilities.craft.QuickCraft|nameInHypixel
+      @|me/lulu/hypixelutilities/craft/QuickCraft.java|2049|2053|name|method|java.lang.Enum|name|()Ljava/lang/String;
+   Method End: QuickCraft()V
+   Method Start: QuickCraft(Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/craft/QuickCraft.java|2068|2078|QuickCraft|method|me.lulu.hypixelutilities.craft.QuickCraft|QuickCraft|(Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/craft/QuickCraft.java|2079|2085|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/craft/QuickCraft.java|2086|2099|nameInHypixel|param|me.lulu.hypixelutilities.craft.QuickCraft|QuickCraft|(Ljava/lang/String;)V|nameInHypixel|0
+      @|me/lulu/hypixelutilities/craft/QuickCraft.java|2116|2129|nameInHypixel|field|me.lulu.hypixelutilities.craft.QuickCraft|nameInHypixel
+      @|me/lulu/hypixelutilities/craft/QuickCraft.java|2132|2145|nameInHypixel|param|me.lulu.hypixelutilities.craft.QuickCraft|QuickCraft|(Ljava/lang/String;)V|nameInHypixel|0
+   Method End: QuickCraft(Ljava/lang/String;)V
+Enum End  : me.lulu.hypixelutilities.craft.QuickCraft
+endProcessing me/lulu/hypixelutilities/craft/QuickCraft.java
+
+processing me/lulu/hypixelutilities/craft/QuickCraftExecutor.java
+@|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|8|38|me.lulu.hypixelutilities.craft|package|me.lulu.hypixelutilities.craft|(file)
+Class Start: me.lulu.hypixelutilities.craft.QuickCraftExecutor
+   Method Start: execute(Lme/lulu/hypixelutilities/craft/QuickCraft;)V
+      @|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|196|203|execute|method|me.lulu.hypixelutilities.craft.QuickCraftExecutor|execute|(Lme/lulu/hypixelutilities/craft/QuickCraft;)V
+      @|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|204|214|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+      @|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|215|220|craft|param|me.lulu.hypixelutilities.craft.QuickCraftExecutor|execute|(Lme/lulu/hypixelutilities/craft/QuickCraft;)V|craft|0
+      @|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|232|246|EntityPlayerSP|class|net.minecraft.client.entity.EntityPlayerSP
+      @|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|256|262|McUtil|class|me.lulu.hypixelutilities.util.McUtil
+      @|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|263|272|getPlayer|method|me.lulu.hypixelutilities.util.McUtil|getPlayer|()Lnet/minecraft/client/entity/EntityPlayerSP;
+      @|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|291|306|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+      @|me/lulu/hypixelutilities/craft/QuickCraftExecutor.java|336|341|craft|param|me.lulu.hypixelutilities.craft.QuickCraftExecutor|execute|(Lme/lulu/hypixelutilities/craft/QuickCraft;)V|craft|0
+      ERROR SimpleName: getNameInHypixel null
+   Method End: execute(Lme/lulu/hypixelutilities/craft/QuickCraft;)V
+Class End  : me.lulu.hypixelutilities.craft.QuickCraftExecutor
+endProcessing me/lulu/hypixelutilities/craft/QuickCraftExecutor.java
+
+processing me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java
+@|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|8|42|me.lulu.hypixelutilities.craft.gui|package|me.lulu.hypixelutilities.craft.gui|(file)
+Class Start: me.lulu.hypixelutilities.craft.gui.QuickCraftGui
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|444|453|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|439|443|List|class|java.util.List
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|455|462|buttons|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|buttons|
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|489|499|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|477|488|ListButtons|class|me.lulu.hypixelutilities.craft.ListButtons
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|501|512|listButtons|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|listButtons|
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|526|542|GuiScrollingList|class|net.minecraftforge.fml.client.GuiScrollingList
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|543|547|list|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|list|
+   Method Start: initGui()V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|580|587|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|606|613|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|625|633|initList|method|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|initList|()V
+   Method End: initGui()V
+   Method Start: initList()V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|661|669|initList|method|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|initList|()V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|687|691|list|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|list
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|698|715|QuickCraftGuiList|class|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|716|725|Minecraft|class|net.minecraft.client.Minecraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|726|738|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|747|752|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|759|765|height|field|net.minecraft.client.gui.GuiScreen|height
+   Method End: initList()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|808|823|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|849|860|IOException|class|java.io.IOException
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|824|833|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|834|840|button|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: drawScreen(IIF)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|901|911|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|916|922|mouseX|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|mouseX|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|928|934|mouseY|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|mouseY|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|942|954|partialTicks|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|partialTicks|2
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|971|975|list|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|list
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|976|986|drawScreen|method|net.minecraftforge.fml.client.GuiScrollingList|drawScreen|(IIF)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|987|993|mouseX|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|mouseX|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|995|1001|mouseY|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|mouseY|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|1003|1015|partialTicks|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|partialTicks|2
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|1032|1042|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|1043|1049|mouseX|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|mouseX|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|1051|1057|mouseY|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|mouseY|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java|1059|1071|partialTicks|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGui|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+Class End  : me.lulu.hypixelutilities.craft.gui.QuickCraftGui
+endProcessing me/lulu/hypixelutilities/craft/gui/QuickCraftGui.java
+
+processing me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java
+@|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|8|42|me.lulu.hypixelutilities.craft.gui|package|me.lulu.hypixelutilities.craft.gui|(file)
+Class Start: me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|364|377|ITEMS_PER_ROW|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|ITEMS_PER_ROW|
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|396|413|QuickCraftListRow|class|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|416|420|rows|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|rows|
+   Method Start: QuickCraftGuiList(Lnet/minecraft/client/Minecraft;II)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|434|451|QuickCraftGuiList|method|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|QuickCraftGuiList|(Lnet/minecraft/client/Minecraft;II)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|452|461|Minecraft|class|net.minecraft.client.Minecraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|462|468|client|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|QuickCraftGuiList|(Lnet/minecraft/client/Minecraft;II)V|client|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|474|479|width|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|QuickCraftGuiList|(Lnet/minecraft/client/Minecraft;II)V|width|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|485|491|height|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|QuickCraftGuiList|(Lnet/minecraft/client/Minecraft;II)V|height|2
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|509|515|client|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|QuickCraftGuiList|(Lnet/minecraft/client/Minecraft;II)V|client|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|517|522|width|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|QuickCraftGuiList|(Lnet/minecraft/client/Minecraft;II)V|width|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|524|530|height|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|QuickCraftGuiList|(Lnet/minecraft/client/Minecraft;II)V|height|2
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|535|541|height|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|QuickCraftGuiList|(Lnet/minecraft/client/Minecraft;II)V|height|2
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|560|568|initRows|method|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|initRows|()V
+   Method End: QuickCraftGuiList(Lnet/minecraft/client/Minecraft;II)V
+   Method Start: initRows()V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|596|604|initRows|method|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|initRows|()V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|617|627|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|639|649|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|650|656|values|method|me.lulu.hypixelutilities.craft.QuickCraft|values|()[Lme/lulu/hypixelutilities/craft/QuickCraft;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|668|672|rows|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|rows
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|679|696|QuickCraftListRow|class|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|697|708|getRowsSize|method|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|getRowsSize|(I)I
+      Field: Array Length, skipping
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|755|759|rows|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|rows
+      Field: Array Length, skipping
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|785|789|rows|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|rows
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|799|816|QuickCraftListRow|class|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow
+      Field: Array Length, skipping
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|883|893|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|925|929|rows|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|rows
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|934|947|ITEMS_PER_ROW|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|ITEMS_PER_ROW
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|949|952|add|method|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|add|(Lme/lulu/hypixelutilities/craft/QuickCraft;)V
+   Method End: initRows()V
+   Method Start: getRowsSize(I)I
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|994|1005|getRowsSize|method|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|getRowsSize|(I)I
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1010|1016|length|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|getRowsSize|(I)I|length|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1046|1052|length|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|getRowsSize|(I)I|length|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1055|1068|ITEMS_PER_ROW|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|ITEMS_PER_ROW
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1094|1100|length|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|getRowsSize|(I)I|length|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1103|1116|ITEMS_PER_ROW|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|ITEMS_PER_ROW
+   Method End: getRowsSize(I)I
+   Method Start: getSize()I
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1221|1228|getSize|method|net.minecraftforge.fml.client.GuiScrollingList|getSize|()I
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1248|1252|rows|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|rows
+      Field: Array Length, skipping
+   Method End: getSize()I
+   Method Start: elementClicked(IZ)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1301|1315|elementClicked|method|net.minecraftforge.fml.client.GuiScrollingList|elementClicked|(IZ)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1320|1321|i|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|elementClicked|(IZ)V|i|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1331|1332|b|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|elementClicked|(IZ)V|b|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1344|1348|rows|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|rows
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1349|1350|i|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|elementClicked|(IZ)V|i|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1352|1359|onClick|method|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|onClick|(II)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1360|1366|mouseX|field|net.minecraftforge.fml.client.GuiScrollingList|mouseX
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1368|1374|mouseY|field|net.minecraftforge.fml.client.GuiScrollingList|mouseY
+   Method End: elementClicked(IZ)V
+   Method Start: isSelected(I)Z
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1420|1430|isSelected|method|net.minecraftforge.fml.client.GuiScrollingList|isSelected|(I)Z
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1435|1436|i|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|isSelected|(I)Z|i|0
+   Method End: isSelected(I)Z
+   Method Start: drawBackground()V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1502|1516|drawBackground|method|net.minecraftforge.fml.client.GuiScrollingList|drawBackground|()V
+   Method End: drawBackground()V
+   Method Start: drawSlot(IIIILnet/minecraft/client/renderer/Tessellator;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1562|1570|drawSlot|method|net.minecraftforge.fml.client.GuiScrollingList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1575|1576|i|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|i|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1582|1587|width|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|width|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1593|1599|height|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|height|2
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1605|1611|barTop|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|barTop|3
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1613|1624|Tessellator|class|net.minecraft.client.renderer.Tessellator
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1625|1636|tessellator|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|tessellator|4
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1648|1652|rows|field|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|rows
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1653|1654|i|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|i|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1656|1662|render|method|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|render|(III)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1663|1668|width|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|width|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1670|1676|height|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|height|2
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1678|1684|barTop|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|drawSlot|(IIIILnet/minecraft/client/renderer/Tessellator;)V|barTop|3
+   Method End: drawSlot(IIIILnet/minecraft/client/renderer/Tessellator;)V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1724|1739|actionPerformed|method|net.minecraftforge.fml.client.GuiScrollingList|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1740|1749|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1750|1756|button|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1774|1789|actionPerformed|method|net.minecraftforge.fml.client.GuiScrollingList|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java|1790|1796|button|param|me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+Class End  : me.lulu.hypixelutilities.craft.gui.QuickCraftGuiList
+endProcessing me/lulu/hypixelutilities/craft/gui/QuickCraftGuiList.java
+
+processing me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java
+@|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|8|42|me.lulu.hypixelutilities.craft.gui|package|me.lulu.hypixelutilities.craft.gui|(file)
+Class Start: me.lulu.hypixelutilities.craft.gui.QuickCraftListRow
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|717|727|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|712|716|List|class|java.util.List
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|729|740|quickCrafts|field|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|quickCrafts|
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|747|756|ArrayList|class|java.util.ArrayList
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|778|788|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|790|795|Range|class|me.lulu.hypixelutilities.craft.gui.Range
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|774|777|Map|class|java.util.Map
+   @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|797|809|craftButtons|field|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|craftButtons|
+   Method Start: add(Lme/lulu/hypixelutilities/craft/QuickCraft;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|828|831|add|method|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|add|(Lme/lulu/hypixelutilities/craft/QuickCraft;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|832|842|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|843|848|craft|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|add|(Lme/lulu/hypixelutilities/craft/QuickCraft;)V|craft|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|865|876|quickCrafts|field|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|quickCrafts
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|877|880|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|881|886|craft|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|add|(Lme/lulu/hypixelutilities/craft/QuickCraft;)V|craft|0
+   Method End: add(Lme/lulu/hypixelutilities/craft/QuickCraft;)V
+   Method Start: render(III)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|912|918|render|method|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|render|(III)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|923|928|width|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|render|(III)V|width|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|934|940|height|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|render|(III)V|height|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|946|952|barTop|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|render|(III)V|barTop|2
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|964|976|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|988|997|Minecraft|class|net.minecraft.client.Minecraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|998|1010|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1013|1028|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1049|1060|quickCrafts|field|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|quickCrafts
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1061|1065|size|method|java.util.Collection|size|()I
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1089|1094|width|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|render|(III)V|width|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1135|1147|craftButtons|field|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|craftButtons
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1154|1161|HashMap|class|java.util.HashMap
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1181|1191|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1200|1211|quickCrafts|field|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|quickCrafts
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1227|1233|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1241|1250|WordUtils|class|org.apache.commons.lang3.text.WordUtils
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1251|1266|capitalizeFully|method|org.apache.commons.lang3.text.WordUtils|capitalizeFully|(Ljava/lang/String;[C)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1273|1277|name|method|java.lang.Enum|name|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1298|1305|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1356|1370|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1480|1490|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1505|1511|height|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|render|(III)V|height|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1537|1549|craftButtons|field|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|craftButtons
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1550|1553|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1565|1570|Range|class|me.lulu.hypixelutilities.craft.gui.Range
+   Method End: render(III)V
+   Method Start: onClick(II)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1648|1655|onClick|method|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|onClick|(II)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1660|1666|mouseX|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|onClick|(II)V|mouseX|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1672|1678|mouseY|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|onClick|(II)V|mouseY|1
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1695|1704|Map.Entry|class|java.util.Map.Entry
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1705|1715|QuickCraft|class|me.lulu.hypixelutilities.craft.QuickCraft
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1717|1722|Range|class|me.lulu.hypixelutilities.craft.gui.Range
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1732|1744|craftButtons|field|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|craftButtons
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1745|1753|entrySet|method|java.util.Map|entrySet|()Ljava/util/Set;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1781|1789|getValue|method|java.util.Map.Entry|getValue|()Ljava/lang/Object;
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1792|1801|isInRange|method|me.lulu.hypixelutilities.craft.gui.Range|isInRange|(I)Z
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1802|1808|mouseX|param|me.lulu.hypixelutilities.craft.gui.QuickCraftListRow|onClick|(II)V|mouseX|0
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1829|1847|QuickCraftExecutor|class|me.lulu.hypixelutilities.craft.QuickCraftExecutor
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1848|1855|execute|method|me.lulu.hypixelutilities.craft.QuickCraftExecutor|execute|(Lme/lulu/hypixelutilities/craft/QuickCraft;)V
+      @|me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java|1862|1868|getKey|method|java.util.Map.Entry|getKey|()Ljava/lang/Object;
+   Method End: onClick(II)V
+Class End  : me.lulu.hypixelutilities.craft.gui.QuickCraftListRow
+endProcessing me/lulu/hypixelutilities/craft/gui/QuickCraftListRow.java
+
+processing me/lulu/hypixelutilities/craft/gui/Range.java
+@|me/lulu/hypixelutilities/craft/gui/Range.java|8|42|me.lulu.hypixelutilities.craft.gui|package|me.lulu.hypixelutilities.craft.gui|(file)
+Class Start: me.lulu.hypixelutilities.craft.gui.Range
+   @|me/lulu/hypixelutilities/craft/gui/Range.java|82|87|start|field|me.lulu.hypixelutilities.craft.gui.Range|start|
+   @|me/lulu/hypixelutilities/craft/gui/Range.java|105|108|end|field|me.lulu.hypixelutilities.craft.gui.Range|end|
+   Method Start: Range(II)V
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|122|127|Range|method|me.lulu.hypixelutilities.craft.gui.Range|Range|(II)V
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|132|137|start|param|me.lulu.hypixelutilities.craft.gui.Range|Range|(II)V|start|0
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|143|146|end|param|me.lulu.hypixelutilities.craft.gui.Range|Range|(II)V|end|1
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|163|168|start|field|me.lulu.hypixelutilities.craft.gui.Range|start
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|171|176|start|param|me.lulu.hypixelutilities.craft.gui.Range|Range|(II)V|start|0
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|191|194|end|field|me.lulu.hypixelutilities.craft.gui.Range|end
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|197|200|end|param|me.lulu.hypixelutilities.craft.gui.Range|Range|(II)V|end|1
+   Method End: Range(II)V
+   Method Start: isInRange(I)Z
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|228|237|isInRange|method|me.lulu.hypixelutilities.craft.gui.Range|isInRange|(I)Z
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|242|243|i|param|me.lulu.hypixelutilities.craft.gui.Range|isInRange|(I)Z|i|0
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|262|263|i|param|me.lulu.hypixelutilities.craft.gui.Range|isInRange|(I)Z|i|0
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|267|272|start|field|me.lulu.hypixelutilities.craft.gui.Range|start
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|276|277|i|param|me.lulu.hypixelutilities.craft.gui.Range|isInRange|(I)Z|i|0
+      @|me/lulu/hypixelutilities/craft/gui/Range.java|280|283|end|field|me.lulu.hypixelutilities.craft.gui.Range|end
+   Method End: isInRange(I)Z
+Class End  : me.lulu.hypixelutilities.craft.gui.Range
+endProcessing me/lulu/hypixelutilities/craft/gui/Range.java
+
+processing me/lulu/hypixelutilities/hud/Hud.java
+@|me/lulu/hypixelutilities/hud/Hud.java|8|36|me.lulu.hypixelutilities.hud|package|me.lulu.hypixelutilities.hud|(file)
+Class Start: me.lulu.hypixelutilities.hud.Hud
+   Method Start: render()V
+      @|me/lulu/hypixelutilities/hud/Hud.java|72|78|render|method|me.lulu.hypixelutilities.hud.Hud|render|()V
+   Method End: render()V
+Class End  : me.lulu.hypixelutilities.hud.Hud
+endProcessing me/lulu/hypixelutilities/hud/Hud.java
+
+processing me/lulu/hypixelutilities/hud/HudListener.java
+@|me/lulu/hypixelutilities/hud/HudListener.java|8|36|me.lulu.hypixelutilities.hud|package|me.lulu.hypixelutilities.hud|(file)
+Class Start: me.lulu.hypixelutilities.hud.HudListener
+   Method Start: onRenderGameOverlay(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+      @|me/lulu/hypixelutilities/hud/HudListener.java|233|252|onRenderGameOverlay|method|me.lulu.hypixelutilities.hud.HudListener|onRenderGameOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+      @|me/lulu/hypixelutilities/hud/HudListener.java|253|275|RenderGameOverlayEvent|class|net.minecraftforge.client.event.RenderGameOverlayEvent
+      @|me/lulu/hypixelutilities/hud/HudListener.java|276|277|e|param|me.lulu.hypixelutilities.hud.HudListener|onRenderGameOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|e|0
+   Method End: onRenderGameOverlay(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+Class End  : me.lulu.hypixelutilities.hud.HudListener
+endProcessing me/lulu/hypixelutilities/hud/HudListener.java
+
+processing me/lulu/hypixelutilities/hud/HudManager.java
+@|me/lulu/hypixelutilities/hud/HudManager.java|8|36|me.lulu.hypixelutilities.hud|package|me.lulu.hypixelutilities.hud|(file)
+Class Start: me.lulu.hypixelutilities.hud.HudManager
+   @|me/lulu/hypixelutilities/hud/HudManager.java|230|233|Hud|class|me.lulu.hypixelutilities.hud.Hud
+   @|me/lulu/hypixelutilities/hud/HudManager.java|225|229|List|class|java.util.List
+   @|me/lulu/hypixelutilities/hud/HudManager.java|235|239|huds|field|me.lulu.hypixelutilities.hud.HudManager|huds|
+   @|me/lulu/hypixelutilities/hud/HudManager.java|246|255|ArrayList|class|java.util.ArrayList
+   @|me/lulu/hypixelutilities/hud/HudManager.java|256|259|Hud|class|me.lulu.hypixelutilities.hud.Hud
+   Method Start: addHud(Lme/lulu/hypixelutilities/hud/Hud;)V
+      @|me/lulu/hypixelutilities/hud/HudManager.java|281|287|addHud|method|me.lulu.hypixelutilities.hud.HudManager|addHud|(Lme/lulu/hypixelutilities/hud/Hud;)V
+      @|me/lulu/hypixelutilities/hud/HudManager.java|288|291|Hud|class|me.lulu.hypixelutilities.hud.Hud
+      @|me/lulu/hypixelutilities/hud/HudManager.java|292|295|hud|param|me.lulu.hypixelutilities.hud.HudManager|addHud|(Lme/lulu/hypixelutilities/hud/Hud;)V|hud|0
+      @|me/lulu/hypixelutilities/hud/HudManager.java|307|311|huds|field|me.lulu.hypixelutilities.hud.HudManager|huds
+      @|me/lulu/hypixelutilities/hud/HudManager.java|312|315|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me/lulu/hypixelutilities/hud/HudManager.java|316|319|hud|param|me.lulu.hypixelutilities.hud.HudManager|addHud|(Lme/lulu/hypixelutilities/hud/Hud;)V|hud|0
+   Method End: addHud(Lme/lulu/hypixelutilities/hud/Hud;)V
+   Method Start: clearHuds()V
+      @|me/lulu/hypixelutilities/hud/HudManager.java|345|354|clearHuds|method|me.lulu.hypixelutilities.hud.HudManager|clearHuds|()V
+      @|me/lulu/hypixelutilities/hud/HudManager.java|367|371|huds|field|me.lulu.hypixelutilities.hud.HudManager|huds
+      @|me/lulu/hypixelutilities/hud/HudManager.java|372|377|clear|method|java.util.Collection|clear|()V
+   Method End: clearHuds()V
+   Method Start: removeHud(Lme/lulu/hypixelutilities/hud/Hud;)V
+      @|me/lulu/hypixelutilities/hud/HudManager.java|404|413|removeHud|method|me.lulu.hypixelutilities.hud.HudManager|removeHud|(Lme/lulu/hypixelutilities/hud/Hud;)V
+      @|me/lulu/hypixelutilities/hud/HudManager.java|414|417|Hud|class|me.lulu.hypixelutilities.hud.Hud
+      @|me/lulu/hypixelutilities/hud/HudManager.java|418|421|hud|param|me.lulu.hypixelutilities.hud.HudManager|removeHud|(Lme/lulu/hypixelutilities/hud/Hud;)V|hud|0
+      @|me/lulu/hypixelutilities/hud/HudManager.java|433|437|huds|field|me.lulu.hypixelutilities.hud.HudManager|huds
+      @|me/lulu/hypixelutilities/hud/HudManager.java|438|444|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|me/lulu/hypixelutilities/hud/HudManager.java|445|448|hud|param|me.lulu.hypixelutilities.hud.HudManager|removeHud|(Lme/lulu/hypixelutilities/hud/Hud;)V|hud|0
+   Method End: removeHud(Lme/lulu/hypixelutilities/hud/Hud;)V
+   Method Start: getHuds()Ljava/util/List;
+      @|me/lulu/hypixelutilities/hud/HudManager.java|479|486|getHuds|method|me.lulu.hypixelutilities.hud.HudManager|getHuds|()Ljava/util/List;
+      @|me/lulu/hypixelutilities/hud/HudManager.java|474|477|Hud|class|me.lulu.hypixelutilities.hud.Hud
+      @|me/lulu/hypixelutilities/hud/HudManager.java|469|473|List|class|java.util.List
+      @|me/lulu/hypixelutilities/hud/HudManager.java|506|511|Lists|class|com.google.common.collect.Lists
+      @|me/lulu/hypixelutilities/hud/HudManager.java|512|524|newArrayList|method|com.google.common.collect.Lists|newArrayList|(Ljava/lang/Iterable;)Ljava/util/ArrayList;
+      @|me/lulu/hypixelutilities/hud/HudManager.java|525|529|huds|field|me.lulu.hypixelutilities.hud.HudManager|huds
+   Method End: getHuds()Ljava/util/List;
+Class End  : me.lulu.hypixelutilities.hud.HudManager
+endProcessing me/lulu/hypixelutilities/hud/HudManager.java
+
+processing me/lulu/hypixelutilities/hud/ListStringHud.java
+@|me/lulu/hypixelutilities/hud/ListStringHud.java|8|36|me.lulu.hypixelutilities.hud|package|me.lulu.hypixelutilities.hud|(file)
+Class Start: me.lulu.hypixelutilities.hud.ListStringHud
+   @|me/lulu/hypixelutilities/hud/ListStringHud.java|136|142|startX|field|me.lulu.hypixelutilities.hud.ListStringHud|startX|
+   @|me/lulu/hypixelutilities/hud/ListStringHud.java|160|166|startY|field|me.lulu.hypixelutilities.hud.ListStringHud|startY|
+   @|me/lulu/hypixelutilities/hud/ListStringHud.java|184|194|lineHeight|field|me.lulu.hypixelutilities.hud.ListStringHud|lineHeight|
+   Method Start: ListStringHud(II)V
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|208|221|ListStringHud|method|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(II)V
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|226|232|startX|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(II)V|startX|0
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|238|244|startY|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(II)V|startY|1
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|261|267|startX|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(II)V|startX|0
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|269|275|startY|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(II)V|startY|1
+   Method End: ListStringHud(II)V
+   Method Start: ListStringHud(III)V
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|299|312|ListStringHud|method|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(III)V
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|317|323|startX|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(III)V|startX|0
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|329|335|startY|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(III)V|startY|1
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|341|351|lineHeight|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(III)V|lineHeight|2
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|368|374|startX|field|me.lulu.hypixelutilities.hud.ListStringHud|startX
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|377|383|startX|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(III)V|startX|0
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|398|404|startY|field|me.lulu.hypixelutilities.hud.ListStringHud|startY
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|407|413|startY|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(III)V|startY|1
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|428|438|lineHeight|field|me.lulu.hypixelutilities.hud.ListStringHud|lineHeight
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|441|451|lineHeight|param|me.lulu.hypixelutilities.hud.ListStringHud|ListStringHud|(III)V|lineHeight|2
+   Method End: ListStringHud(III)V
+   Method Start: render()V
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|490|496|render|method|me.lulu.hypixelutilities.hud.Hud|render|()V
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|517|523|startY|field|me.lulu.hypixelutilities.hud.ListStringHud|startY
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|538|544|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|549|556|getList|method|me.lulu.hypixelutilities.hud.ListStringHud|getList|()Ljava/util/List;
+      ERROR SimpleName: getFontRenderer null
+      ERROR SimpleName: drawStringWithShadow null
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|616|622|startX|field|me.lulu.hypixelutilities.hud.ListStringHud|startX
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|648|658|lineHeight|field|me.lulu.hypixelutilities.hud.ListStringHud|lineHeight
+   Method End: render()V
+   Method Start: getList()Ljava/util/List;
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|714|721|getList|method|me.lulu.hypixelutilities.hud.ListStringHud|getList|()Ljava/util/List;
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|706|712|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/hud/ListStringHud.java|701|705|List|class|java.util.List
+   Method End: getList()Ljava/util/List;
+Class End  : me.lulu.hypixelutilities.hud.ListStringHud
+endProcessing me/lulu/hypixelutilities/hud/ListStringHud.java
+
+processing me/lulu/hypixelutilities/hud/SimpleHud.java
+@|me/lulu/hypixelutilities/hud/SimpleHud.java|8|36|me.lulu.hypixelutilities.hud|package|me.lulu.hypixelutilities.hud|(file)
+Class Start: me.lulu.hypixelutilities.hud.SimpleHud
+   @|me/lulu/hypixelutilities/hud/SimpleHud.java|268|280|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+   @|me/lulu/hypixelutilities/hud/SimpleHud.java|281|293|fontRenderer|field|me.lulu.hypixelutilities.hud.SimpleHud|fontRenderer|
+   @|me/lulu/hypixelutilities/hud/SimpleHud.java|296|305|Minecraft|class|net.minecraft.client.Minecraft
+   @|me/lulu/hypixelutilities/hud/SimpleHud.java|306|318|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|me/lulu/hypixelutilities/hud/SimpleHud.java|321|336|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+Class End  : me.lulu.hypixelutilities.hud.SimpleHud
+endProcessing me/lulu/hypixelutilities/hud/SimpleHud.java
+
+processing me/lulu/hypixelutilities/items/AndruilHud.java
+@|me/lulu/hypixelutilities/items/AndruilHud.java|8|38|me.lulu.hypixelutilities.items|package|me.lulu.hypixelutilities.items|(file)
+Class Start: me.lulu.hypixelutilities.items.AndruilHud
+   Method Start: AndruilHud()V
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|371|381|AndruilHud|method|me.lulu.hypixelutilities.items.AndruilHud|AndruilHud|()V
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|421|435|ResourceSingle|class|me.lulu.hypixelutilities.resource.ResourceSingle
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|447|456|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|457|462|Items|class|net.minecraft.init.Items
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|463|472|blaze_rod|field|net.minecraft.init.Items|blaze_rod
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|499|512|ResourceGroup|class|me.lulu.hypixelutilities.resource.ResourceGroup
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|546|560|ResourceSingle|class|me.lulu.hypixelutilities.resource.ResourceSingle
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|571|580|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|581|586|Items|class|net.minecraft.init.Items
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|587|597|iron_ingot|field|net.minecraft.init.Items|iron_ingot
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|633|647|ResourceSingle|class|me.lulu.hypixelutilities.resource.ResourceSingle
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|658|667|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|668|674|Blocks|class|net.minecraft.init.Blocks
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|675|685|iron_block|field|net.minecraft.init.Blocks|iron_block
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|730|744|ResourceSingle|class|me.lulu.hypixelutilities.resource.ResourceSingle
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|755|764|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|765|770|Items|class|net.minecraft.init.Items
+      @|me/lulu/hypixelutilities/items/AndruilHud.java|771|778|feather|field|net.minecraft.init.Items|feather
+   Method End: AndruilHud()V
+Class End  : me.lulu.hypixelutilities.items.AndruilHud
+endProcessing me/lulu/hypixelutilities/items/AndruilHud.java
+
+processing me/lulu/hypixelutilities/items/DragonSwordHud.java
+@|me/lulu/hypixelutilities/items/DragonSwordHud.java|8|38|me.lulu.hypixelutilities.items|package|me.lulu.hypixelutilities.items|(file)
+Class Start: me.lulu.hypixelutilities.items.DragonSwordHud
+   Method Start: DragonSwordHud()V
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|319|333|DragonSwordHud|method|me.lulu.hypixelutilities.items.DragonSwordHud|DragonSwordHud|()V
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|373|387|ResourceSingle|class|me.lulu.hypixelutilities.resource.ResourceSingle
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|398|407|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|408|413|Items|class|net.minecraft.init.Items
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|414|427|diamond_sword|field|net.minecraft.init.Items|diamond_sword
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|451|465|ResourceSingle|class|me.lulu.hypixelutilities.resource.ResourceSingle
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|477|486|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|487|492|Items|class|net.minecraft.init.Items
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|493|505|blaze_powder|field|net.minecraft.init.Items|blaze_powder
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|532|546|ResourceSingle|class|me.lulu.hypixelutilities.resource.ResourceSingle
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|558|567|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|568|574|Blocks|class|net.minecraft.init.Blocks
+      @|me/lulu/hypixelutilities/items/DragonSwordHud.java|575|583|obsidian|field|net.minecraft.init.Blocks|obsidian
+   Method End: DragonSwordHud()V
+Class End  : me.lulu.hypixelutilities.items.DragonSwordHud
+endProcessing me/lulu/hypixelutilities/items/DragonSwordHud.java
+
+processing me/lulu/hypixelutilities/resource/Resource.java
+@|me/lulu/hypixelutilities/resource/Resource.java|8|41|me.lulu.hypixelutilities.resource|package|me.lulu.hypixelutilities.resource|(file)
+Class Start: me.lulu.hypixelutilities.resource.Resource
+   Method Start: hasEnough()Z
+      @|me/lulu/hypixelutilities/resource/Resource.java|147|156|hasEnough|method|me.lulu.hypixelutilities.resource.Resource|hasEnough|()Z
+   Method End: hasEnough()Z
+   Method Start: getName()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/Resource.java|172|179|getName|method|me.lulu.hypixelutilities.resource.Resource|getName|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/Resource.java|165|171|String|class|java.lang.String
+   Method End: getName()Ljava/lang/String;
+   Method Start: getRequire()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/Resource.java|204|214|getRequire|method|me.lulu.hypixelutilities.resource.Resource|getRequire|()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/Resource.java|193|202|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/Resource.java|188|192|List|class|java.util.List
+   Method End: getRequire()Ljava/util/List;
+Class End  : me.lulu.hypixelutilities.resource.Resource
+endProcessing me/lulu/hypixelutilities/resource/Resource.java
+
+processing me/lulu/hypixelutilities/resource/ResourceGroup.java
+@|me/lulu/hypixelutilities/resource/ResourceGroup.java|8|41|me.lulu.hypixelutilities.resource|package|me.lulu.hypixelutilities.resource|(file)
+Class Start: me.lulu.hypixelutilities.resource.ResourceGroup
+   @|me/lulu/hypixelutilities/resource/ResourceGroup.java|302|308|String|class|java.lang.String
+   @|me/lulu/hypixelutilities/resource/ResourceGroup.java|309|313|name|field|me.lulu.hypixelutilities.resource.ResourceGroup|name|
+   @|me/lulu/hypixelutilities/resource/ResourceGroup.java|332|340|Resource|class|me.lulu.hypixelutilities.resource.Resource
+   @|me/lulu/hypixelutilities/resource/ResourceGroup.java|327|331|List|class|java.util.List
+   @|me/lulu/hypixelutilities/resource/ResourceGroup.java|342|351|resources|field|me.lulu.hypixelutilities.resource.ResourceGroup|resources|
+   Method Start: ResourceGroup(Ljava/lang/String;[Lme/lulu/hypixelutilities/resource/Resource;)V
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|365|378|ResourceGroup|method|me.lulu.hypixelutilities.resource.ResourceGroup|ResourceGroup|(Ljava/lang/String;[Lme/lulu/hypixelutilities/resource/Resource;)V
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|379|385|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|386|390|name|param|me.lulu.hypixelutilities.resource.ResourceGroup|ResourceGroup|(Ljava/lang/String;[Lme/lulu/hypixelutilities/resource/Resource;)V|name|0
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|392|400|Resource|class|me.lulu.hypixelutilities.resource.Resource
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|404|413|resources|param|me.lulu.hypixelutilities.resource.ResourceGroup|ResourceGroup|(Ljava/lang/String;[Lme/lulu/hypixelutilities/resource/Resource;)V|resources|1
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|430|434|name|field|me.lulu.hypixelutilities.resource.ResourceGroup|name
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|437|441|name|param|me.lulu.hypixelutilities.resource.ResourceGroup|ResourceGroup|(Ljava/lang/String;[Lme/lulu/hypixelutilities/resource/Resource;)V|name|0
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|456|465|resources|field|me.lulu.hypixelutilities.resource.ResourceGroup|resources
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|468|473|Lists|class|com.google.common.collect.Lists
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|474|486|newArrayList|method|com.google.common.collect.Lists|newArrayList|([Ljava/lang/Object;)Ljava/util/ArrayList;
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|487|496|resources|param|me.lulu.hypixelutilities.resource.ResourceGroup|ResourceGroup|(Ljava/lang/String;[Lme/lulu/hypixelutilities/resource/Resource;)V|resources|1
+   Method End: ResourceGroup(Ljava/lang/String;[Lme/lulu/hypixelutilities/resource/Resource;)V
+   Method Start: hasEnough()Z
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|539|548|hasEnough|method|me.lulu.hypixelutilities.resource.Resource|hasEnough|()Z
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|567|575|Resource|class|me.lulu.hypixelutilities.resource.Resource
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|587|596|resources|field|me.lulu.hypixelutilities.resource.ResourceGroup|resources
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|625|634|hasEnough|method|me.lulu.hypixelutilities.resource.Resource|hasEnough|()Z
+   Method End: hasEnough()Z
+   Method Start: getName()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|739|746|getName|method|me.lulu.hypixelutilities.resource.Resource|getName|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|732|738|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|766|770|name|field|me.lulu.hypixelutilities.resource.ResourceGroup|name
+   Method End: getName()Ljava/lang/String;
+   Method Start: getRequire()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|820|830|getRequire|method|me.lulu.hypixelutilities.resource.Resource|getRequire|()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|809|818|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|804|808|List|class|java.util.List
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|843|847|List|class|java.util.List
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|848|857|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|869|878|ArrayList|class|java.util.ArrayList
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|898|906|Resource|class|me.lulu.hypixelutilities.resource.Resource
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|918|927|resources|field|me.lulu.hypixelutilities.resource.ResourceGroup|resources
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|947|953|addAll|method|java.util.Collection|addAll|(Ljava/util/Collection;)Z
+      @|me/lulu/hypixelutilities/resource/ResourceGroup.java|963|973|getRequire|method|me.lulu.hypixelutilities.resource.Resource|getRequire|()Ljava/util/List;
+   Method End: getRequire()Ljava/util/List;
+Class End  : me.lulu.hypixelutilities.resource.ResourceGroup
+endProcessing me/lulu/hypixelutilities/resource/ResourceGroup.java
+
+processing me/lulu/hypixelutilities/resource/ResourceHud.java
+@|me/lulu/hypixelutilities/resource/ResourceHud.java|8|41|me.lulu.hypixelutilities.resource|package|me.lulu.hypixelutilities.resource|(file)
+Class Start: me.lulu.hypixelutilities.resource.ResourceHud
+   @|me/lulu/hypixelutilities/resource/ResourceHud.java|473|481|Resource|class|me.lulu.hypixelutilities.resource.Resource
+   @|me/lulu/hypixelutilities/resource/ResourceHud.java|468|472|List|class|java.util.List
+   @|me/lulu/hypixelutilities/resource/ResourceHud.java|483|491|resource|field|me.lulu.hypixelutilities.resource.ResourceHud|resource|
+   Method Start: ResourceHud([Lme/lulu/hypixelutilities/resource/Resource;)V
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|505|516|ResourceHud|method|me.lulu.hypixelutilities.resource.ResourceHud|ResourceHud|([Lme/lulu/hypixelutilities/resource/Resource;)V
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|517|525|Resource|class|me.lulu.hypixelutilities.resource.Resource
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|529|537|resource|param|me.lulu.hypixelutilities.resource.ResourceHud|ResourceHud|([Lme/lulu/hypixelutilities/resource/Resource;)V|resource|0
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|575|583|resource|field|me.lulu.hypixelutilities.resource.ResourceHud|resource
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|586|591|Lists|class|com.google.common.collect.Lists
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|592|604|newArrayList|method|com.google.common.collect.Lists|newArrayList|([Ljava/lang/Object;)Ljava/util/ArrayList;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|605|613|resource|param|me.lulu.hypixelutilities.resource.ResourceHud|ResourceHud|([Lme/lulu/hypixelutilities/resource/Resource;)V|resource|0
+   Method End: ResourceHud([Lme/lulu/hypixelutilities/resource/Resource;)V
+   Method Start: getList()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|664|671|getList|method|me.lulu.hypixelutilities.hud.ListStringHud|getList|()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|656|662|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|651|655|List|class|java.util.List
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|684|688|List|class|java.util.List
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|689|695|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|708|717|ArrayList|class|java.util.ArrayList
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|737|745|Resource|class|me.lulu.hypixelutilities.resource.Resource
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|781|787|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|794|802|getColor|method|me.lulu.hypixelutilities.resource.ResourceHud|getColor|(Lme/lulu/hypixelutilities/resource/Resource;)Lnet/minecraft/util/EnumChatFormatting;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|824|831|getName|method|me.lulu.hypixelutilities.resource.Resource|getName|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|862|871|hasEnough|method|me.lulu.hypixelutilities.resource.Resource|hasEnough|()Z
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|901|907|concat|method|java.lang.String|concat|(Ljava/lang/String;)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|916|926|requireStr|method|me.lulu.hypixelutilities.resource.ResourceHud|requireStr|(Ljava/util/List;)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|936|946|getRequire|method|me.lulu.hypixelutilities.resource.Resource|getRequire|()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|976|979|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+   Method End: getList()Ljava/util/List;
+   Method Start: requireStr(Ljava/util/List;)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1044|1054|requireStr|method|me.lulu.hypixelutilities.resource.ResourceHud|requireStr|(Ljava/util/List;)Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1037|1043|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1060|1069|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1055|1059|List|class|java.util.List
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1071|1078|require|param|me.lulu.hypixelutilities.resource.ResourceHud|requireStr|(Ljava/util/List;)Ljava/lang/String;|require|0
+   Method End: requireStr(Ljava/util/List;)Ljava/lang/String;
+   Method Start: getColor(Lme/lulu/hypixelutilities/resource/Resource;)Lnet/minecraft/util/EnumChatFormatting;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1453|1461|getColor|method|me.lulu.hypixelutilities.resource.ResourceHud|getColor|(Lme/lulu/hypixelutilities/resource/Resource;)Lnet/minecraft/util/EnumChatFormatting;
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1434|1452|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1462|1470|Resource|class|me.lulu.hypixelutilities.resource.Resource
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1471|1479|resource|param|me.lulu.hypixelutilities.resource.ResourceHud|getColor|(Lme/lulu/hypixelutilities/resource/Resource;)Lnet/minecraft/util/EnumChatFormatting;|resource|0
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1495|1503|resource|param|me.lulu.hypixelutilities.resource.ResourceHud|getColor|(Lme/lulu/hypixelutilities/resource/Resource;)Lnet/minecraft/util/EnumChatFormatting;|resource|0
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1504|1513|hasEnough|method|me.lulu.hypixelutilities.resource.Resource|hasEnough|()Z
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1536|1554|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1555|1560|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1594|1612|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me/lulu/hypixelutilities/resource/ResourceHud.java|1613|1617|GRAY|field|net.minecraft.util.EnumChatFormatting|GRAY
+   Method End: getColor(Lme/lulu/hypixelutilities/resource/Resource;)Lnet/minecraft/util/EnumChatFormatting;
+Class End  : me.lulu.hypixelutilities.resource.ResourceHud
+endProcessing me/lulu/hypixelutilities/resource/ResourceHud.java
+
+processing me/lulu/hypixelutilities/resource/ResourceSingle.java
+@|me/lulu/hypixelutilities/resource/ResourceSingle.java|8|41|me.lulu.hypixelutilities.resource|package|me.lulu.hypixelutilities.resource|(file)
+Class Start: me.lulu.hypixelutilities.resource.ResourceSingle
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|305|320|InventoryPlayer|class|net.minecraft.entity.player.InventoryPlayer
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|321|330|inventory|field|me.lulu.hypixelutilities.resource.ResourceSingle|inventory|
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|333|339|McUtil|class|me.lulu.hypixelutilities.util.McUtil
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|340|349|getPlayer|method|me.lulu.hypixelutilities.util.McUtil|getPlayer|()Lnet/minecraft/client/entity/EntityPlayerSP;
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|352|361|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|376|385|ItemStack|class|net.minecraft.item.ItemStack
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|386|390|item|field|me.lulu.hypixelutilities.resource.ResourceSingle|item|
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|404|410|String|class|java.lang.String
+   @|me/lulu/hypixelutilities/resource/ResourceSingle.java|411|415|name|field|me.lulu.hypixelutilities.resource.ResourceSingle|name|
+   Method Start: ResourceSingle(Ljava/lang/String;Lnet/minecraft/item/ItemStack;)V
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|429|443|ResourceSingle|method|me.lulu.hypixelutilities.resource.ResourceSingle|ResourceSingle|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;)V
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|444|450|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|451|455|name|param|me.lulu.hypixelutilities.resource.ResourceSingle|ResourceSingle|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;)V|name|0
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|457|466|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|467|471|item|param|me.lulu.hypixelutilities.resource.ResourceSingle|ResourceSingle|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;)V|item|1
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|488|492|name|field|me.lulu.hypixelutilities.resource.ResourceSingle|name
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|495|499|name|param|me.lulu.hypixelutilities.resource.ResourceSingle|ResourceSingle|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;)V|name|0
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|514|518|item|field|me.lulu.hypixelutilities.resource.ResourceSingle|item
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|521|525|item|param|me.lulu.hypixelutilities.resource.ResourceSingle|ResourceSingle|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;)V|item|1
+   Method End: ResourceSingle(Ljava/lang/String;Lnet/minecraft/item/ItemStack;)V
+   Method Start: hasEnough()Z
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|567|576|hasEnough|method|me.lulu.hypixelutilities.resource.Resource|hasEnough|()Z
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|596|614|getAmountToRequire|method|me.lulu.hypixelutilities.resource.ResourceSingle|getAmountToRequire|(Lnet/minecraft/item/ItemStack;)I
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|615|619|item|field|me.lulu.hypixelutilities.resource.ResourceSingle|item
+   Method End: hasEnough()Z
+   Method Start: getName()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|666|673|getName|method|me.lulu.hypixelutilities.resource.Resource|getName|()Ljava/lang/String;
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|659|665|String|class|java.lang.String
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|693|697|name|field|me.lulu.hypixelutilities.resource.ResourceSingle|name
+   Method End: getName()Ljava/lang/String;
+   Method Start: getRequire()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|747|757|getRequire|method|me.lulu.hypixelutilities.resource.Resource|getRequire|()Ljava/util/List;
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|736|745|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|731|735|List|class|java.util.List
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|777|782|Lists|class|com.google.common.collect.Lists
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|783|795|newArrayList|method|com.google.common.collect.Lists|newArrayList|([Ljava/lang/Object;)Ljava/util/ArrayList;
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|800|809|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|810|814|item|field|me.lulu.hypixelutilities.resource.ResourceSingle|item
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|815|822|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|826|844|getAmountToRequire|method|me.lulu.hypixelutilities.resource.ResourceSingle|getAmountToRequire|(Lnet/minecraft/item/ItemStack;)I
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|845|849|item|field|me.lulu.hypixelutilities.resource.ResourceSingle|item
+   Method End: getRequire()Ljava/util/List;
+   Method Start: getAmountToRequire(Lnet/minecraft/item/ItemStack;)I
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|877|895|getAmountToRequire|method|me.lulu.hypixelutilities.resource.ResourceSingle|getAmountToRequire|(Lnet/minecraft/item/ItemStack;)I
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|896|905|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|906|910|item|param|me.lulu.hypixelutilities.resource.ResourceSingle|getAmountToRequire|(Lnet/minecraft/item/ItemStack;)I|item|0
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|929|933|item|param|me.lulu.hypixelutilities.resource.ResourceSingle|getAmountToRequire|(Lnet/minecraft/item/ItemStack;)I|item|0
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|934|943|stackSize|field|net.minecraft.item.ItemStack|stackSize
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|946|961|getPlayerAmount|method|me.lulu.hypixelutilities.resource.ResourceSingle|getPlayerAmount|(Lnet/minecraft/item/ItemStack;)I
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|962|966|item|param|me.lulu.hypixelutilities.resource.ResourceSingle|getAmountToRequire|(Lnet/minecraft/item/ItemStack;)I|item|0
+   Method End: getAmountToRequire(Lnet/minecraft/item/ItemStack;)I
+   Method Start: getPlayerAmount(Lnet/minecraft/item/ItemStack;)I
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|992|1007|getPlayerAmount|method|me.lulu.hypixelutilities.resource.ResourceSingle|getPlayerAmount|(Lnet/minecraft/item/ItemStack;)I
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|1008|1017|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|1018|1022|item|param|me.lulu.hypixelutilities.resource.ResourceSingle|getPlayerAmount|(Lnet/minecraft/item/ItemStack;)I|item|0
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|1063|1072|ItemStack|class|net.minecraft.item.ItemStack
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|1083|1092|inventory|field|me.lulu.hypixelutilities.resource.ResourceSingle|inventory
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|1093|1106|mainInventory|field|net.minecraft.entity.player.InventoryPlayer|mainInventory
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|1126|1130|item|param|me.lulu.hypixelutilities.resource.ResourceSingle|getPlayerAmount|(Lnet/minecraft/item/ItemStack;)I|item|0
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|1131|1142|isItemEqual|method|net.minecraft.item.ItemStack|isItemEqual|(Lnet/minecraft/item/ItemStack;)Z
+      @|me/lulu/hypixelutilities/resource/ResourceSingle.java|1186|1195|stackSize|field|net.minecraft.item.ItemStack|stackSize
+   Method End: getPlayerAmount(Lnet/minecraft/item/ItemStack;)I
+Class End  : me.lulu.hypixelutilities.resource.ResourceSingle
+endProcessing me/lulu/hypixelutilities/resource/ResourceSingle.java
+
+processing me/lulu/hypixelutilities/util/McUtil.java
+@|me/lulu/hypixelutilities/util/McUtil.java|8|37|me.lulu.hypixelutilities.util|package|me.lulu.hypixelutilities.util|(file)
+Class Start: me.lulu.hypixelutilities.util.McUtil
+   Method Start: getPlayer()Lnet/minecraft/client/entity/EntityPlayerSP;
+      @|me/lulu/hypixelutilities/util/McUtil.java|235|244|getPlayer|method|me.lulu.hypixelutilities.util.McUtil|getPlayer|()Lnet/minecraft/client/entity/EntityPlayerSP;
+      @|me/lulu/hypixelutilities/util/McUtil.java|220|234|EntityPlayerSP|class|net.minecraft.client.entity.EntityPlayerSP
+      @|me/lulu/hypixelutilities/util/McUtil.java|264|273|Minecraft|class|net.minecraft.client.Minecraft
+      @|me/lulu/hypixelutilities/util/McUtil.java|274|286|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me/lulu/hypixelutilities/util/McUtil.java|289|298|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+   Method End: getPlayer()Lnet/minecraft/client/entity/EntityPlayerSP;
+Class End  : me.lulu.hypixelutilities.util.McUtil
+endProcessing me/lulu/hypixelutilities/util/McUtil.java
+
