@@ -2,6 +2,7 @@ package me.lulu.hypixelutilities;
 
 import me.lulu.hypixelutilities.command.CommandHandler;
 import me.lulu.hypixelutilities.command.impl.CraftCommand;
+import me.lulu.hypixelutilities.craft.QuickCraftConfig;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
@@ -17,6 +18,7 @@ public class HypixelUtilities {
     public static final String VERSION = "1.0";
 
     public static final KeyBinding CRAFT_KEY = new KeyBinding("開啟快速合成界面", Keyboard.KEY_C, "HypixelUtilities");
+    public static final QuickCraftConfig QUICK_CRAFT_CONFIG = new QuickCraftConfig();
 
     @EventHandler
     public void init(FMLInitializationEvent event) {

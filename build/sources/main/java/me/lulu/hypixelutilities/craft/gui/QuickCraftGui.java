@@ -24,7 +24,7 @@ public class QuickCraftGui extends GuiScreen {
     }
 
     private void initList() {
-        this.list = new QuickCraftGuiList(Minecraft.getMinecraft(), this.width, this.height);
+        this.list = new QuickCraftGuiList(Minecraft.getMinecraft(), this, this.width, this.height);
     }
 
     @Override
