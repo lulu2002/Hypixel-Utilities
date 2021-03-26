@@ -1,7 +1,6 @@
 package me.lulu.hypixelutilities.craft;
 
 import com.google.common.collect.Lists;
-import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 
