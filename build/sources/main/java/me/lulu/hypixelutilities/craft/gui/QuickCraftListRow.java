@@ -7,6 +7,8 @@ import me.lulu.hypixelutilities.util.McUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.item.ItemStack;
 import org.apache.commons.lang3.text.WordUtils;
 import org.lwjgl.input.Keyboard;
 
@@ -46,13 +48,25 @@ public class QuickCraftListRow {
 
             renderer.drawString(name, startX, y + 4, getColor(craft, mouseX, mouseY));
 
-            Minecraft minecraft = Minecraft.getMinecraft();
-            minecraft.getRenderItem().renderItemAndEffectIntoGUI(
-                    craft.getItem(), startX + stringWidth + 2, y);
+            drawItemTexture(y, craft, stringWidth, startX);
 
 
             index++;
         }
+    }
+
+    private void drawItemTexture(int y, QuickCraft craft, int stringWidth, int startX) {
+        Minecraft minecraft = Minecraft.getMinecraft();
+        ItemStack item = craft.getItem();
+
+        //prevent dark block
+        RenderHelper.disableStandardItemLighting();
+        RenderHelper.enableGUIStandardItemLighting();
+
+        minecraft.getRenderItem().renderItemAndEffectIntoGUI(
+                item, startX + stringWidth + 2, y);
+
+        RenderHelper.enableGUIStandardItemLighting();
     }
 
     private int getColor(QuickCraft craft, int mouseX, int mouseY) {
