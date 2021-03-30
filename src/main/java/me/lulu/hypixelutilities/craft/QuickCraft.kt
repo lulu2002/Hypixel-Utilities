@@ -4,6 +4,8 @@ import me.lulu.hypixelutilities.util.addLores
 import net.minecraft.init.Blocks
 import net.minecraft.init.Items
 import net.minecraft.item.ItemStack
+import org.apache.commons.lang3.StringUtils
+import org.apache.commons.lang3.text.WordUtils
 
 enum class QuickCraft {
     AMBROSIA(ItemStack(Items.glowstone_dust)),
@@ -91,6 +93,8 @@ enum class QuickCraft {
 
     val nameInHypixel: String
     val item: ItemStack
+    val fancyName
+        get() = WordUtils.capitalizeFully(name, '_').replace("_", "")
 
     constructor() : this(ItemStack(Blocks.air)) {}
     constructor(item: ItemStack, vararg lores: String) {

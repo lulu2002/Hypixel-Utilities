@@ -23,6 +23,9 @@ class ResourcesCommand : AbstractCommand("resources", "顯示資源列表") {
                 return
             }
         }
+
+
+
         HudManager.addHud(hud)
     }
 }

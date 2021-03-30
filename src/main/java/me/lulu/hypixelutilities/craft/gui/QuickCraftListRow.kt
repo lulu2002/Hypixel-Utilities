@@ -57,9 +57,10 @@ class QuickCraftListRow(private val guiScreen: GuiScreen) {
 
     fun onClick(mouseX: Int, mouseY: Int) {
         val quickCraft = getMouseCraft(mouseX, mouseY) ?: return
-        if (Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) quickCraft.toggleFavorite() else QuickCraftExecutor.execute(
-            quickCraft
-        )
+
+        if (Keyboard.isKeyDown(Keyboard.KEY_LSHIFT))
+            quickCraft.toggleFavorite()
+        else QuickCraftExecutor.execute(quickCraft)
         clientPlayer.playSound("random.click", 0.3f, 1f)
     }
 

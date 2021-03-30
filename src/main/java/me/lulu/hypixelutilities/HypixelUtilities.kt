@@ -10,10 +10,14 @@ import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.event.FMLInitializationEvent
 import org.lwjgl.input.Keyboard
 
-@Mod(modid = HypixelUtilities.MODID, version = HypixelUtilities.VERSION)
+@Mod(
+    modid = HypixelUtilities.MODID,
+    name = "Hypixel Utilities",
+    version = HypixelUtilities.VERSION
+)
 class HypixelUtilities {
     @Mod.EventHandler
-    fun init(event: FMLInitializationEvent?) {
+    fun init(event: FMLInitializationEvent) {
         registerEvents()
         registerCommands()
         registerKeyBinds()

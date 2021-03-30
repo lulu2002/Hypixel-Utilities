@@ -15,8 +15,13 @@ buildscript {
     }
 }
 
+plugins {
+    id 'com.github.johnrengelman.shadow' version '4.0.0'
+}
+
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'kotlin'
+apply plugin: 'idea'
 
 sourceCompatibility = targetCompatibility = '1.8'
 compileJava.options.encoding = 'UTF-8'
@@ -27,9 +32,16 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "2.0.0"
+version = "3.0.0"
 group = "me.lulu.hypixelutilities" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Hypixel Utilities"
+
+idea {
+    module {
+        inheritOutputDirs = true
+        sourceDirs += file("src/main/java")
+    }
+}
 
 minecraft {
     version = "1.8.9-11.15.1.1722"
@@ -45,8 +57,9 @@ minecraft {
 }
 
 repositories {
-    maven { url = "https://repo.sk1er.club/repository/maven-public/" }
-
+    maven {
+        url = "https://repo.sk1er.club/repository/maven-public"
+    }
     //forgelin repo
     maven { url "http://maven.shadowfacts.net/" }
 
@@ -55,9 +68,9 @@ repositories {
 
 dependencies {
     provided 'org.projectlombok:lombok:1.18.16'
-    implementation "net.shadowfacts:Forgelin:1.8.3"
+//    implementation "net.shadowfacts:Forgelin:1.8.3"
 //    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-
+    compileOnly "club.sk1er:Elementa:129-10809-SNAPSHOT"
 }
 
 processResources {
