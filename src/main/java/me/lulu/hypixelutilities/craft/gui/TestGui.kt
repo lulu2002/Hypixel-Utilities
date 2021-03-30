@@ -1,7 +1,6 @@
 package me.lulu.hypixelutilities.craft.gui
 
 import club.sk1er.elementa.UIComponent
-import club.sk1er.elementa.WindowScreen
 import club.sk1er.elementa.components.ScrollComponent
 import club.sk1er.elementa.components.UIBlock
 import club.sk1er.elementa.constraints.CenterConstraint
@@ -11,18 +10,17 @@ import club.sk1er.elementa.dsl.asConstraint
 import club.sk1er.elementa.dsl.childOf
 import club.sk1er.elementa.dsl.constrain
 import club.sk1er.elementa.dsl.pixels
-import com.example.examplemod.ComponentsGui
 import me.lulu.hypixelutilities.craft.QuickCraft
 import me.lulu.hypixelutilities.craft.QuickCraftExecutor
 import me.lulu.hypixelutilities.craft.isFavorite
 import me.lulu.hypixelutilities.craft.toggleFavorite
 import me.lulu.hypixelutilities.util.clientPlayer
-import net.minecraft.enchantment.Enchantment
 import org.lwjgl.input.Keyboard
 import java.awt.Color
+import java.util.*
 
 
-class TestGui : WindowScreen() {
+class TestGui : WindowScreenTest() {
 
     private var mouseX = 0
     private var mouseY = 0
@@ -83,7 +81,7 @@ class TestGui : WindowScreen() {
                 setColor(Color(0f, 0f, 0f, .5f).asConstraint())
             }.onMouseLeave {
                 setColor(defaultColor.asConstraint())
-            }.onMouseClick {
+            }.onMouseClick { mouseX, mouseY, mouseButton ->
                 if (Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) {
                     quickCraft.toggleFavorite()
                 } else QuickCraftExecutor.execute(quickCraft)

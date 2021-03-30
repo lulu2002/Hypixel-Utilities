@@ -1,7 +1,6 @@
 package me.lulu.hypixelutilities
 
 import me.lulu.hypixelutilities.command.CommandHandler
-import me.lulu.hypixelutilities.command.impl.CraftCommand
 import me.lulu.hypixelutilities.craft.QuickCraftConfig
 import net.minecraft.client.settings.KeyBinding
 import net.minecraftforge.common.MinecraftForge
@@ -13,6 +12,7 @@ import org.lwjgl.input.Keyboard
 @Mod(
     modid = HypixelUtilities.MODID,
     name = "Hypixel Utilities",
+    modLanguageAdapter = "net.shadowfacts.forgelin.KotlinAdapter",
     version = HypixelUtilities.VERSION
 )
 class HypixelUtilities {
@@ -38,12 +38,12 @@ class HypixelUtilities {
         val handler = CommandHandler()
 
 //        handler.registerCommand(new ResourcesCommand());
-        handler.registerCommand(CraftCommand())
+//        handler.registerCommand(CraftCommand())
     }
 
     companion object {
         const val MODID = "Hypixel Utilities"
-        const val VERSION = "1.0"
+        const val VERSION = "3.0"
         val CRAFT_KEY = KeyBinding("開啟快速合成界面", Keyboard.KEY_C, "HypixelUtilities")
         val QUICK_CRAFT_CONFIG = QuickCraftConfig()
     }
