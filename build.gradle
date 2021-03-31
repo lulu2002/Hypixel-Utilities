@@ -32,7 +32,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "3.0.0"
+version = "3.0.2"
 group = "me.lulu.hypixelutilities" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Hypixel Utilities"
 
@@ -61,7 +61,7 @@ repositories {
 
 dependencies {
     provided 'org.projectlombok:lombok:1.18.16'
-    compile "net.shadowfacts:Forgelin:1.8.4"
+//    compile "net.shadowfacts:Forgelin:1.8.4"
     implementation "club.sk1er:Elementa:1.7.1-10809"
 }
 
