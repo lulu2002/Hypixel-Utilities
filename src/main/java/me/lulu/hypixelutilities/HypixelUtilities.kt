@@ -5,6 +5,7 @@ import me.lulu.hypixelutilities.command.impl.CraftCommand
 import me.lulu.hypixelutilities.craft.QuickCraftConfig
 import me.lulu.hypixelutilities.deathcounter.DeathCountListener
 import net.minecraft.client.settings.KeyBinding
+import net.minecraft.entity.player.EntityPlayer
 import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.fml.client.registry.ClientRegistry
 import net.minecraftforge.fml.common.Mod
@@ -34,6 +35,10 @@ class HypixelUtilities {
 
     private fun registerCommands() {
         val handler = CommandHandler()
+
+        var player: EntityPlayer? = null
+
+
 
 //        handler.registerCommand(new ResourcesCommand());
         handler.registerCommand(CraftCommand())

@@ -3,8 +3,10 @@ package me.lulu.hypixelutilities.craft.gui
 import club.sk1er.elementa.UIComponent
 import club.sk1er.elementa.components.ScrollComponent
 import club.sk1er.elementa.components.UIBlock
+import club.sk1er.elementa.components.UITextInput
 import club.sk1er.elementa.constraints.CenterConstraint
 import club.sk1er.elementa.constraints.CramSiblingConstraint
+import club.sk1er.elementa.constraints.RelativeConstraint
 import club.sk1er.elementa.constraints.SiblingConstraint
 import club.sk1er.elementa.dsl.asConstraint
 import club.sk1er.elementa.dsl.childOf
@@ -24,26 +26,31 @@ class QuickCraftGuiNew : WindowScreenTest() {
 
     private var mouseX = 0
     private var mouseY = 0
-    private val items = ArrayList<UIItem>()
-
+    private val items = mutableMapOf<QuickCraft, UIItem>()
+    private val list: UIComponent
 
     override fun drawScreen(mouseX: Int, mouseY: Int, partialTicks: Float) {
         this.mouseX = mouseX
         this.mouseY = mouseY
 
+//        items.forEach { t -> t.draw() }
+
         super.drawScreen(mouseX, mouseY, partialTicks)
 
-        items.forEach { t: UIComponent ->
-            if (t is UIItem && t.isHovered()) {
-                t.hovering(t)
+        items.forEach { (q, t) ->
+            try {
+                if (t is UIItem && t.isHovered())
+                    t.hovering(t)
+            } catch (ex: Exception) {
+
             }
         }
     }
 
     init {
 
-        val list = ScrollComponent().constrain {
-            x = 10.pixels()
+        list = ScrollComponent().constrain {
+            x = 5.pixels()
             y = CenterConstraint()
 
             width = 150.pixels()
@@ -51,15 +58,50 @@ class QuickCraftGuiNew : WindowScreenTest() {
 
         } childOf window
 
-        val quickCrafts = QuickCraft.values()
-        quickCrafts.sortBy { quickCraft -> quickCraft.name }
-        quickCrafts.sortByDescending { quickCraft -> quickCraft.isFavorite() }
-        val padding = 2f
-        val itemsPerRow = 5
-        val startX = 5
-        val startY = 5
+        val input = UITextInput("Search").constrain {
+            x = 5.pixels()
+            y = SiblingConstraint(alignOpposite = true)
 
-        fun getNextY(i: Int) = if (i == 0) startY.pixels() else SiblingConstraint(padding)
+            width = 60.pixels()
+            height = 20.pixels()
+        } childOf window
+
+        input.onUpdate {
+            val name = it
+
+            items.forEach { quickCraft, uiItem ->
+                if (quickCraft.name.startsWith(name, ignoreCase = true)) {
+                    uiItem.unhide()
+                    uiItem.parent.unhide()
+                } else {
+                    uiItem.hide()
+                    uiItem.parent.hide()
+                }
+            }
+        }
+
+        input.active = true
+
+        window.onMouseClick { mouseX, mouseY, mouseButton ->
+            input.active = input.isHovered()
+        }
+
+        updateIcons()
+    }
+
+    private fun updateIcons(
+        padding: Float = 2f,
+        itemsPerRow: Int = 5,
+        startX: Int = 5,
+        startY: Int = 5,
+        quickCrafts: List<QuickCraft> = QuickCraft.values().asList()
+    ) {
+        quickCrafts.sortedBy { quickCraft -> quickCraft.name }
+        quickCrafts.sortedByDescending { quickCraft -> quickCraft.isFavorite() }
+
+        fun getNextY(i: Int) =
+            if (i == 0) startY.pixels()
+            else SiblingConstraint(padding)
 
         repeat(quickCrafts.size) { i ->
             val quickCraft = quickCrafts[i]
@@ -68,7 +110,8 @@ class QuickCraftGuiNew : WindowScreenTest() {
             val defaultColor =
                 if (quickCraft.isFavorite())
                     Color(255, 255, 255, 40)
-                else Color(0, 0, 0, 0)
+                else
+                    Color(0, 0, 0, 0)
 
             val background = UIBlock(defaultColor).constrain {
                 val nextLine = i % itemsPerRow == 0
@@ -96,7 +139,7 @@ class QuickCraftGuiNew : WindowScreenTest() {
                 drawHoveringText(listOf(quickCraft.fancyName, "點擊來合成"), mouseX, mouseY, fontRendererObj)
             } childOf background
 
-            items.add(item)
+            items.put(quickCraft, item)
         }
     }
 

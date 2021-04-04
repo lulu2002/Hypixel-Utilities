@@ -13,4 +13,4 @@ fun QuickCraft.toggleFavorite() {
 }
 
 private val config: QuickCraftConfig
-    private get() = HypixelUtilities.Companion.QUICK_CRAFT_CONFIG
+    private get() = HypixelUtilities.QUICK_CRAFT_CONFIG
